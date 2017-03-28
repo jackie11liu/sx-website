@@ -1,0 +1,324 @@
+<#macro script_import>
+</#macro> 
+<#macro script>
+</#macro> 
+<#macro css_import>
+</#macro> 
+<#macro css>
+</#macro> 
+<#macro layout>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>${WEB_TITLE!WEB_NAME!} - ${WEB_SUBTITLE!}</title>
+  <meta name="keywords" content="${META_KEYWORDS!}">
+  <meta name="description" content="${META_DESCRIPTION!}">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta name="author" content="design by jackie L" />
+
+    <LINK rel="SHORTCUT ICON" href="${CTPATH}/images/favicon.ico"/>
+    <link rel="stylesheet" href="${CPATH}/resources/ui/ui.css" />
+    <link rel="stylesheet" href="${CPATH}/resources/ui/grid12.css" />
+    <link rel="stylesheet" href="${CPATH}/resources/web/css/style.css" />
+    <link rel="stylesheet" href="${CPATH}/resources/web/css/responsive.css" />
+    <link rel="stylesheet" href="${CPATH}/resources/web/css/animate.css" />
+
+
+
+    <!--[if lt IE 9]><script src="${CTPATH}/js/H5shiv.js"></script><![endif]-->
+
+    <script src="${CPATH}/resources/modules/seajs/sea.js" id="seajsConfig" domain="http://127.0.0.1:8080/sx-group"></script>
+    <script src="${CPATH}/resources/web/seajs.config.js"></script>
+
+</head>
+<body data-w="1583">
+<section class="bodyMain indexMain">
+    <!--header-->
+    <header class="pageHeader">
+        <div class="head_top">
+            <div class="wrap">
+                <ul class="head_r fix">
+                    <li class="li01"><a href="http://116.112.204.234/seeyon/index.jsp">办公OA</a> </li>
+                    <li class="li02"><a href="###" class="val">双欣站群<i class="ions"></i></a>
+                        <div class="option" style="display: none;" id="websites">
+                            <a href="http://www.shuangxinpva.com/" target="_blank">内蒙古双欣环保材料股份有限公司</a>
+                            <a href="http://www.shuangxinlng.com/" target="_blank">鄂尔多斯市宏基亿泰能源有限公司</a>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="head_bottom">
+            <div class="wrap fix">
+                <div class="head_ser r active">
+                    <a href="###" class="_val"><i class="ico"></i></a>
+                </div>
+                <div class="head_lang r pr">
+                    <a href="http://www.sxzyjt.com/en/" target="_blank" class="_val">EN</a>
+                </div>
+                <nav class="nav r" id="menu">
+                    <ul class="fix">
+                        <@jp.menus>
+                        <#list menus as menu>
+                            <li class="nav_li nav1">
+                                <a  href="${menu.url!}" target="" class="nav_a">
+                                    ${menu.title!}
+                                    <#if menu.isActive() >
+                                        <span class="x-a-border"></span>
+                                    </#if>
+                                </a>
+                            </li>
+                        </#list>
+                    </@jp.menus>
+                        <li class="nav_li nav1"><a href="http://www.sxzyjt.com/about/index.html" target="" class="nav_a">关于双欣</a>
+                            <div class="setNav pa" style="display: none; height: 280px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                <div class="wrap oh pr">
+                                    <div class="setCon l">
+                                        <h3 class="tit">关于双欣</h3>
+                                        <div class="p">
+                                            <p>
+                                                内蒙古双欣能源化工有限公司（原名称为内蒙古双欣资源集团有限公司）成立于2000年7月，位于内蒙古鄂尔多斯市棋盘井工业园区，注册资本13.11亿元，法定代表人乔玉华，主要经营可降解高分子聚乙烯醇（PVA）、高强高模纤维、聚乙烯醇膜、聚乙烯醇缩丁醛（PVB）、煤基活性炭、电力、煤炭及煤基新材料的研发、生产、销售；液化天然气（LNG）、碳化钙的研发、销售；聚乙烯醇高分子材料产业链及其应用开发、研究。
+                                            </p>
+                                            <p><br></p>
+                                        </div>
+                                    </div>
+                                    <ul class="setMenu l c">
+                                        <li class="nav8"><a href="#" target="">双欣简介</a> </li>
+                                        <li class="nav9"><a href="#" target="">创始人</a> </li>
+                                        <li class="nav10"><a href="#" target="">发展历程</a> </li>
+                                        <li class="nav11"><a href="#" target="">企业荣誉</a>
+                                            <ul class="MobilePush">
+                                                <li class="nav14"><a href="#" target="">综合规模实力</a></li>
+                                                <li class="nav15"><a href="#" target="">科技创新能力</a></li>
+                                                <li class="nav16"><a href="#" target="">创先争优</a></li>
+                                            </ul> </li>
+                                        <li class="nav12"><a href="#" target="">企业文化</a> </li>
+                                        <li class="nav13"><a href="#" target="">联系我们</a> </li>
+                                    </ul>
+                                    <div class="set-img r">
+                                        <img src="${CTPATH}/images/eda3b2008b7349fcb2b2608db9ef0013.jpg" alt="" class="" width="100%">
+                                    </div>
+                                </div>
+                            </div> </li>
+
+
+
+
+                    <li class="nav_li nav1"><a href="http://www.sxzyjt.com/about/index.html" target="" class="nav_a">新闻中心</a>
+                        <div class="setNav pa" style="display: none; height: 280px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                            <div class="wrap oh pr">
+                                <div class="setCon l">
+                                    <h3 class="tit">新闻中心</h3>
+                                    <div class="p">
+                                        <p>
+                                            聚集公司实时动态，发布双欣集团最新新闻，欢迎您的关注！
+                                        </p>
+                                        <p><br></p>
+                                    </div>
+                                </div>
+                                <ul class="setMenu l c">
+                                    <li class="nav8"><a href="#" target="">热点资讯</a> </li>
+                                    <li class="nav9"><a href="#" target="">行业资讯</a> </li>
+                                </ul>
+                                <div class="set-img r">
+                                    <img src="${CTPATH}/images/eda3b2008b7349fcb2b2608db9ef0013.jpg" alt="" class="" width="100%">
+                                </div>
+                            </div>
+                        </div> </li>
+
+
+
+
+
+                    <li class="nav_li nav1"><a href="http://www.sxzyjt.com/about/index.html" target="" class="nav_a">实力双欣</a>
+                        <div class="setNav pa" style="display: none; height: 280px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                            <div class="wrap oh pr">
+                                <div class="setCon l">
+                                    <h3 class="tit">实力双欣</h3>
+                                    <div class="p">
+                                        <p>
+                                            以创新驱动，产品与系统解决方案全面应用于高端市场、高端领域，并在海内外一些列重大工程中创造了多项世界之最。
+                                        </p>
+                                        <p><br></p>
+                                    </div>
+                                </div>
+                                <ul class="setMenu l c">
+                                    <li class="nav8"><a href="#" target="">产业布局</a> </li>
+                                    <li class="nav9"><a href="#" target="">创新发展</a> </li>
+                                </ul>
+                                <div class="set-img r">
+                                    <img src="${CTPATH}/images/eda3b2008b7349fcb2b2608db9ef0013.jpg" alt="" class="" width="100%">
+                                </div>
+                            </div>
+                        </div> </li>
+
+                    <li class="nav_li nav1"><a href="http://www.sxzyjt.com/about/index.html" target="" class="nav_a">产品展示</a>
+                        <div class="setNav pa" style="display: none; height: 280px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                            <div class="wrap oh pr">
+                                <div class="setCon l">
+                                    <h3 class="tit">产品展示</h3>
+                                    <div class="p">
+                                        <p>
+                                            以创新驱动，产品与系统解决方案全面应用于高端市场、高端领域，并在海内外一些列重大工程中创造了多项世界之最。
+                                        </p>
+                                        <p><br></p>
+                                    </div>
+                                </div>
+                                <ul class="setMenu l c">
+                                    <li class="nav8"><a href="#" target="">煤炭产业产品</a> </li>
+                                    <li class="nav9"><a href="#" target="">化工产业产品</a> </li>
+                                </ul>
+                                <div class="set-img r">
+                                    <img src="${CTPATH}/images/eda3b2008b7349fcb2b2608db9ef0013.jpg" alt="" class="" width="100%">
+                                </div>
+                            </div>
+                        </div> </li>
+
+
+
+
+
+                    <li class="nav_li nav1"><a href="http://www.sxzyjt.com/about/index.html" target="" class="nav_a">人才发展</a>
+                        <div class="setNav pa" style="display: none; height: 280px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                            <div class="wrap oh pr">
+                                <div class="setCon l">
+                                    <h3 class="tit">人才发展</h3>
+                                    <div class="p">
+                                        <p>
+                                            人才战略是双欣战略实施前提与重要保障。双欣坚持“人才资源是企业的第一资源”理念，创新人才培育和引进方式，着力建设一支与国际化战略发展相适应、总量适当、层级结构合理、专业结构配套的国际化人才队伍
+                                        </p>
+                                        <p><br></p>
+                                    </div>
+                                </div>
+                                <ul class="setMenu l c">
+                                    <li class="nav8"><a href="#" target="">人才理念</a> </li>
+                                    <li class="nav9"><a href="#" target="">校园招聘</a> </li>
+                                    <li class="nav10"><a href="#" target="">社会招聘</a> </li>
+                                </ul>
+                                <div class="set-img r">
+                                    <img src="${CTPATH}/images/eda3b2008b7349fcb2b2608db9ef0013.jpg" alt="" class="" width="100%">
+                                </div>
+                            </div>
+                        </div> </li>
+
+
+
+
+                    </ul>
+                    <i class="line" style="display: none; width: 82px; left: 1004px;"></i></nav>
+                <h1 class="logo l"><a href="http://www.sxzyjt.com/" class="hidetext" title="双欣集团">双欣集团</a></h1>
+                <a href="#menu" class="mobile_key"><i class="ion"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+
+
+<#nested>
+
+    <!--footer-->
+    <footer class="pageFooter">
+        <div class="foot_top">
+            <div class="wrap fix">
+                <div class="f_logo l">
+                    <a href="http://www.sxzyjt.com/"><img src="${CTPATH}/images/logo.gif" alt="双欣集团"></a>
+                </div>
+                <dl class="f_dl f_dl1 l">
+                    <dt>
+                        <a href="#">关于双欣</a>
+                    </dt>
+                    <dd>
+                        <a href="#">双欣简介</a>
+                        <a href="#">创始人</a>
+                        <a href="#">发展历程</a>
+                        <a href="#">企业荣誉</a>
+                        <a href="#">企业文化</a>
+                        <a href="#">联系我们</a>
+                    </dd>
+                </dl>
+                <dl class="f_dl f_dl2 l">
+                    <dt>
+                        <a href="#">新闻中心</a>
+                    </dt>
+                    <dd>
+                        <a href="#">热点资讯</a>
+                        <a href="#">行业资讯</a>
+                        <a href="#">媒体视角</a>
+                        <a href="#">专题报道</a>
+                        <a href="#">亨通内刊</a>
+                        <a href="#">视频中心</a>
+                        <a href="#">最新公告</a>
+                    </dd>
+                </dl>
+                <dl class="f_dl f_dl3 l">
+                    <dt>
+                        企业链接
+                    </dt>
+                    <dd>
+                        <div class="bd">
+                            <div class="tempWrap" style="overflow:hidden; position:relative; height:150px"><ul style="top: 0px; position: relative; padding: 0px; margin: 0px;">
+                                <li style="height: 25px;"><a href="http://www.shuangxinpva.com/" target="_blank">内蒙古双欣环保材料股份有限公司</a> </li>
+                                <li style="height: 25px;"><a href="http://www.shuangxinlng.com/" target="_blank">鄂尔多斯市宏基亿泰能源有限公司</a> </li>
+
+                            </ul></div>
+                        </div>
+                        <div class="hd">
+                            <a href="javascript:;" class="f_dl3_arr dl3_arr_prev"></a>
+                            <ul></ul>
+                            <a href="javascript:;" class="f_dl3_arr dl3_arr_next"></a>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="f_dl4 r" style="width: 280px;">
+                    <dt>
+                        互动专区
+                    </dt>
+                    <dd>
+                        <ul class="f_erwm fix">
+                            <li class="li1"><img src="${CTPATH}/images/t6.png" alt="双欣集团"><p>双欣集团</p></li>
+                            <li class="li2"></li>
+                            <li class="li3"></li>
+                        </ul>
+                    </dd>
+                    <!--<dd class="bdsharebuttonbox" data-tag="foot_share">
+                        <span class="l">关注我们</span>
+                        <a href="#" class="bds_tsina" data-cmd="tsina"></a>
+                        <a href="#" class="bds_tqq" data-cmd="tqq"></a>
+                        <a href="#" class="bds_tqf" data-cmd="tqf"></a>
+                        <a href="#" class="bds_qzone" data-cmd="qzone"></a>
+                        <a href="#" class="bds_kaixin001" data-cmd="kaixin001"></a>
+                        <a href="#" class="bds_douban" data-cmd="douban"></a>
+                    </dd>-->
+                </dl>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <div class="wrap fix">
+                <div class="l">
+                    Copyright © 2017
+                    <a href="http://www.sxzyjt.com/">双欣集团</a> 版权所有
+                    <span class="_beian">备案号：[ <a href="http://www.miibeian.gov.cn/" target="_blank">蒙ICP备10001287号</a> ]</span>
+                </div>
+                <div class="r">
+                    <a href="#">网站地图</a>
+                    <em>|</em>
+                    <a href="Y">法律声明</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+
+</section>
+
+<div id="boxBlank" ontouchmove="return false" onselectstart="return false"></div>
+</body>
+</html>
+    <script type="text/javascript">
+        seajs.use('js/index');
+    </script>
+</#macro>

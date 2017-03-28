@@ -1,0 +1,400 @@
+/*
+* name: Mobile && SmallScreen StyleSheet
+* version: v1.1.1
+* update: 320 bug
+* date: 2016-03-12
+*/
+
+/* <640 */
+.channl_title{font-size:26px;}
+.channl_title_en{word-break:break-all;}
+
+/*通用头部*/
+
+.head_top{display:none;}
+.logo{margin: 0 0 15px;float: none;clear: both;}
+/*.mobile_key{margin-top:0;position: absolute;right: 2%;top: 72px;}*/
+
+/*首页中间区域*/
+.videoBanner .vbtn{bottom:10px;}
+.cen_box1{display:none;}
+.cen_box2 li{height:100%;}
+.cen_box2{margin:20px 0;}
+.cen_box2 .cen2_scroll{height:0;padding-bottom:66%;position:relative;overflow:hidden;}
+.cen_box2 .cen2_scroll .slide_nav{position:absolute;bottom:6%;left:0;width:100%;text-align: center;font-size:0;}
+.cen_box2 .cen2_scroll .slide_nav a{display:inline-block;width: 10%;height:7px;background-color:#fff;cursor:pointer;margin:0 4px;line-height: 99;overflow:hidden;}
+.cen_box2 .cen2_scroll .slide_nav a.on{background-color:#006ab8;}
+.cen-map-top .cen-map-left,.cen-map-top .inter-map-tab{float:none;width:100%;}
+.widget-area,.cen_box4 .p,.cen_box6 .cover .tit_en{display:none;}
+.cen_box5 .m_detail{width:50%;}
+.cen_box5 li{margin-bottom:10px;}
+
+
+
+/*通用底部*/
+.foot_top{display:none;}
+.foot_bottom ._beian{margin-left:0;display:block;}
+
+/*下层--通用样式*/
+.n_banner,.s_menu_bar{display:none;}
+.main_bar{padding-top:20px;}
+.main_content{min-height:inherit;padding-bottom:0; }
+.n_bann_en{font-size:24px;}
+
+.maxWrap{width:auto;padding-left:2%;padding-right:2%;}
+
+/*联系我们*/
+.about_callus .part1 .part1_main{margin-left:0;position:static;width:100%;}
+
+/*亨通简介*/
+.about_jianjie .part1 .part1_text_box{padding: 120px 10px 0px;}
+.about_jianjie .part2 .part2_box{padding:50px 0px;}
+.about_jianjie .part3 .part3_l_box{padding:40px 20px;}
+.about_jianjie .part3 .part3_r_bd .tab_c{padding:0px 50px;}
+.about_jianjie .part3 .part3_r_bd ._tab_t_box .tab_t{padding:10px;}
+.about_jianjie .part3 .part3_r_box{padding:40px 20px;}
+.about_jianjie .part4{background-size:500% 100%;}
+.about_jianjie .part5{padding:100px 0px;}
+.about_jianjie .part5{background-size: 300% 100%;}
+.about_jianjie .part3 .part3_r_bd ._tab_t_box .tab_t{padding:10px 6px;}
+
+/*关于综合*/
+.about_home .part1_box .hd_text{padding:0px 0px;}
+.about_home .part3 .part3_hd{margin-bottom: 30px;}
+.about_home .part3{background-size: 300% 100%;height:auto;}
+.about_home .part3 .wrap{padding:20px 60px;}
+
+/*创始人*/
+.csr_box1 .img, .csr_box1 .cs_content{float: none;width:100%;}
+.honorBox .honor_img{max-width: 100%;margin-bottom: 20px;}
+.csr_box4{padding:40px 0 0}
+.csr4_zt_Video .zt_bigImg{display:none;}
+.csr4_zt_Video .zt_video{float:none;width:100%;}
+.csr_box1 .cs_content .pbox_btn .btn_box{width:100%;}
+.csr_box1 .cs_content .pbox,.csr_box1 .cs_content .pbox{height:auto;}
+
+/*出版物详情*/
+.cbw_detail .cbw_left,.cbw_detail .cbw_right{float:none;width:100%;}
+
+/*视频列表*/
+.videoList ul{margin-right: 0;}
+.videoList li{float:none;width:100%;margin-right: 0;}
+.box_wrap_out{width:100%!important;}
+
+/*专题页*/
+.zhanti_header .logo{float:left;}
+.zt_head_menu{margin-top:0;}
+.zt-box1{padding:0 0 30px;}
+.zt-media-top .date,.zt-media-top .title{float:none;width:100%;}
+.zt-media-top .date{text-align: left;margin-bottom: 10px;}
+.zt-media-list li .date{display:none;}
+.zt-media-list li .t{width:100%;}
+.special_list li .img, .special_list li .pbox{float:none;width:100%}
+.special_list li .pbox .p{display:none;}
+.special_list .bd{height:0;padding-bottom:100%;}
+.special_list li .pbox .info{padding:5px 5%;}
+
+.zt-pics-list .bd{padding-bottom:0;}
+.zt-pics-list .scroll_nav{display:none;}
+
+/*发展历史*/
+.about_history .history_bd ._list_box ._list_l,.about_history .history_bd ._list_box ._list_r{width:100%;}
+.threeLayer_menu li{margin-bottom:20px;}
+.threeLayer_menu li.cur:after{display:none;}
+.about_history .history_bd .row_line,.about_history .history_bd .col_line,.about_history .history_bd ._list_l .img_line{display:none;}
+.about_history .history_bd ._list_r ._r_year{left:0;top:16px;}
+.about_history .history_hd{margin-bottom:0px;}
+.about_history .history_bd{padding-top:0px;}
+.about_history .history_bd ._list_r ._r_main ._time{width:20%;}
+.about_history .history_bd ._list_r ._r_main ._text{width:80%;}
+
+/*新闻列表*/
+.news_list .news_pic_list li{margin-bottom:20px}
+.news_list .news_sarch .select_box{width:100%;margin-bottom:10px;}
+.news_list .news_sarch .seach_box{display:block;width:100%;margin-bottom:10px;}
+.news_list .news_sarch .seach_btn{width:100%;margin-left:0;}
+
+/*新闻详细*/
+.widget-newsdetail-2 ._head ._title{font-size:20px;}
+.detail_right_btn{width:100%;}
+.widget-newsdetail-2 ._tools ._tool{display:none;}
+.widget-newsdetail-2 ._tools #switcher{display:none;}
+.widget-newsdetail-2 ._tools{padding-bottom:20px;text-align:center;}
+
+
+/*产业布局*/
+.cybj_list li .img,.cybj_list li .info{float:none;width:100%;}
+.cybj_list li .c{padding-bottom:0;margin-bottom:0;}
+.cybj_list li .pbox .p{height:auto;}
+
+/*新闻综合*/
+.news_home .part2{background-size:200% 100%;height:auto;padding-bottom:30px;}
+.news_home .part3_l,.news_home .part3_r{width:100%;}
+
+
+/*创新发展*/
+.cxfz-box1{padding:20px 0 0;}
+.cxfz-box1 .cxfz-list .wrap{padding-left:0;padding-right: 0;}
+.cxfz-list li img{max-width:100%;}
+.cxfz-list li .pbox .p_pp span{display:block;}
+.cxfz-box2{padding-bottom:40px;}
+.cxfz-box2 .part2_hd{margin-bottom:0;}
+
+/*管理学院*/
+.glxy-box1{padding:20px 0 30px;}
+.xy-Tit ._xy_en{display:none;}
+.xy-Tit ._xy_big,.xy-Tit ._xy_small{position:static;}
+.glxy-box2{background:none;padding-top:0;}
+.glxy-box2 .pbox .img{display:none;}
+.glxy-box2 .pbox{padding:20px 5%;}
+.glxy-box3{ padding: 40px 0 30px;}
+.glxy-pro-list li{width:49%;margin-bottom:2%;}
+.glxy-box4{padding: 15px 0 40px;}
+.cen-news .-news-top{width:100%;}
+.cen-news .-news-list .first .p,.cen-news .-news-list li .word .p{display:none;}
+.cen-news .-news-list .first .tit{height:auto;}
+.cen-news .-news-list .first .tit ._date{float:none;}
+.cen-news .-news-list .first .tit ._title,.cen-news .-news-list li .img{float:none;width:100%;}
+.cen-news .-news-list li .word{width:73%;margin-top: 8px;}
+.cen-news .-news-list li ._data .day,.cen-news .-news-list li ._data .month{margin-top:0;vertical-align:middle;}
+
+
+/*亨通实力综合*/
+.shili_home .part_hd .hd_text{padding:0px 10px;}
+.shili_home .part_bd .bd_l .main_box{padding-left:20px;}
+
+/*实力-产业详细*/
+.shili_cy_detail .main_list .list_pic,.shili_cy_detail .main_list .list_r{width:100%;}
+.shili_cy_detail .main_list .list_r_bd{padding-right:0px;}
+
+/*上市公司*/
+.shili_shangshi .part1 .list_box_l,.shili_shangshi .part1 .list_box_r{width:100%;}
+.shili_shangshi .part1 .list_box{padding: 30px 20px 60px;}
+.shili_shangshi .part1 .list_box_l{margin-bottom:20px;}
+
+/*品牌价值*/
+.shili_pinpai .part1_bd{padding:20px 30px;}
+
+/*招聘列表*/
+.widget-job-2 ._jcon{padding:20px;}
+.job_list .job_list_hd .search .search_box,.job_list .job_list_hd .select_box{width:100%;}
+.job_list .job_list_hd .hd_title{width:100%;}
+.job_list .job_list_hd .main_list{width:100%;}
+
+/*校园招聘*/
+.job_school .part2_bd dl{width:100%;}
+.job_school .part2_bottom .bottom_list{margin-right:0;}
+
+/*人才理念*/
+.j-ln-box1{padding-top:20px}
+.j-ln-box2 .n_bann_p{display: none;}
+.j-ln-box2 .m_detail{width:50%;}
+.j-ln-box2{height:auto;padding:40px 0;}
+.j-ln-box2 .wrap{padding-top:0;}
+
+/*招聘综合*/
+.job_home_part1{padding:30px 0px;}
+.job_home_banner{display:block;}
+.job_home_banner .bann_img{display:none;}
+.job_home_banner .banner_main{position:static;margin-left:0;width:auto;text-align:center}
+.job_home_banner .banner_main li{margin-bottom:20px;}
+.job_home_banner .banner_main .list_box{background:#0075c2;}
+.job_home_banner .banner_main .list_box a{display:inline-block;}
+.job_home_banner .banner_main .list_main{color:#fff;}
+.job_home_banner .banner_main .list_box .list_ico01{background-position:0px -100px;}
+.job_home_banner .banner_main .list_box .list_ico02{background-position:-85px -100px;}
+.job_home_banner .banner_main .list_box .list_ico03{background-position:-170px -100px;}
+.job_home_part1 .part1_bd .bd_l{background-size:500% 100%;}
+.job_home_part1 .part1_bd .bd_l a{border-right:none;border-bottom:1px solid #fff;}
+.job_home_part2 .part2_r_box{padding:20px 2%;}
+.job_home_part2 .part2_r{background-position: 20px 80px;}
+.job_home_part2 .part2_r_box .m_detail{width:40%;}
+
+/*社会责任-综合*/
+.shze_home_part3{height:auto;background-size:500% 100%;}
+.shze_home_part3 .part3_hd .hd_text{padding:20px 0px;}
+
+/*社会责任理念*/
+.shzr_linian_part1 .part1_bd ul{width:100%;}
+.shzr_linian_part1 .part1_bd li{width:100%;margin-bottom:50px;}
+.shzr_linian_part1 .part1_bd .list_box .list_text{height:auto;min-height:220px;}
+
+/*海外活动*/
+.inter_activity_part1 .part1_r_box{padding: 32px 20px;}
+.inter_activity_part1 .part1_r_bd .title{width:60%;}
+.inter_activity_part1 .part1_r_bd .time{width:40%}
+
+/*全球运营*/
+.inter_yunying_part1 .part1_hd li{margin:0;}
+
+/*亨通慈善基金会*/
+.htcs-box1{padding-top:20px;}
+.cs-items .it1{float:none;width:100%;}
+.cs-items .it2{display:none;}
+.cs-items .it1 img{margin:10px 0;}
+.cs-items .it1{padding:20px 0;}
+.cs-items .items{height:auto;}
+.cs-items .it5 .pbox{padding:5%;}
+.cs-dongtai .pbox{padding-bottom:88px;}
+.cs-dongtai li{margin-bottom:20px;}
+.htcs-box2 .m_detail{width:50%;}
+.gongcheng_tab .tab_menu li{margin-bottom:10px;}
+.gongcheng_tab .tab_c{display:none;}
+
+/*国际亨通综合*/
+.inter-box1{ padding: 20px 0 40px;}
+.global-items ul{width:100%;}
+.global-items li{width:100%;float:none;margin-right: 0;margin-bottom:2%;}
+.global-items .pbox .info .img{margin-top:35px;}
+.inter-box2{padding-top:25px;}
+.inter-map-top .word .p{font-size:14px;}
+.inter-box3 .m_detail{width:50%;}
+
+/*20161119简历表单按钮*/
+.Form-J1 .Form-J1-Left,.Form-J1 .Form-J1-right{width:100%;}
+.Form-J1 .Form-J1-Btn button{width:34%;}
+
+/*20161121*/
+.about_jianjie .part3 .part3_r_bd ._tab_t_box{margin-bottom:0px;}
+
+/*20161123爱心工程*/
+.gongcheng_scrol .info,.gongcheng_scrol .img{width:100%;}
+.gongcheng_scrol{height:auto;}
+
+/*2016-11-30*/
+.banner li img{width:100%;}
+.about_home .part2_box li.odd ._list_l ._list_l_box{padding:20px;min-height:200px;}
+
+/*2016-11-30关于亨通*/
+.about_jianjie .part2 .part2_l,.about_jianjie .part2 .part2_r{width:100%;}
+
+/*企业文化*/
+.news_home .part1_bd ._bd_r ._list_r{width:50%;}
+
+/*新闻列表*/
+.news_list .news_list_main ._list_r{width:100%;}
+
+/*实力综合*/
+.shili_home .part_bd .bd_l .bd_list{position:static;}
+.shili_home .part_bd .bd_r_box .r_box{height:auto;}
+.shili_home .part_bd .bd_r_box .r_box01 .font_main{width:100%;position:static;}
+
+/*品牌价值*/
+.shili_pinpai .part4_l .part4_bd li,.shili_pinpai .part4_l .part4_bd .li4, .shili_pinpai .part4_l .part4_bd .li5{width:100%;}
+
+/*社会责任*/
+.shze_home_part2 ._list_l ._list_l_box .list_main .list_main_r{width:100%;}
+.shze_home_part2 ._list_l_box .list_main{padding:20px;}
+
+/*2016-12-01发展历程*/
+.about_history .history_hd{width:100%;}
+.honor_list .threeLayer_menu li{width:100%;}
+
+/*2016-12-02*/
+.gongcheng_tab .tab_menu{height:200px;}
+.gongcheng_tab .tab_menu li{width:41%;}
+.pinpai_list li{width:100%;margin-bottom:20px;}
+.shili_home .part_bd .bd_l .bd_l_main{height:auto;}
+
+.vjs-big-play-button{display:none!important}
+
+.widget-job-2 ._hd strong,.widget-job-2 ._jt strong{width:25%;}
+
+/*2016-12-07创新发展*/
+.cxfz-box2{background-size: 500% 100%;}
+.cxfz_box1_main li{margin-bottom:20px;}
+.cxfz_box3 .box3_l_list li{margin-bottom:20px;}
+.cxfz_box4 .cxfz_box4_main ul{width:100%;}
+.cxfz_box4 .cxfz_box4_main li{width:52%;float:none;margin:0 auto 10px;}
+.cxfz_box4 .cxfz_box4_main .list_ico{margin: 30px auto 1px;}
+
+/*2016-12-07*/
+.cs-items .items .pbox{padding:10px;}
+.htcs-box3{background-size:500% 100%;}
+
+/*2016-12-28*/
+.shili_home .part_bd .bd_l .bd_l_main{height:0;}
+.shili_home .img_p,.shili_home .img_title{margin-bottom:0;}
+.shili_home .img_p{height:26px;}
+.shili_home .img_text_box{padding:10px;}
+
+/*2016-12-29创始人*/
+.csr_box1 .csr_box1_l,.csr_box1 .csr_box1_r,.csr_box1 .csr_box1_l .img, .csr_box1 .cs_content{width:100%;}
+
+/*2016-12-29创新发展*/
+.cxfz-box2 li{margin-bottom:20px;}
+.cxfz-box2 li,.cxfz_box5 .box5_number li{width:100%;}
+
+/*2016-12-29企业荣誉*/
+.about_rongyu .rongyu_title{width:100%;background-size:100% 100%;}
+.about_rongyu .rongyu_title_box{width:100%;}
+.about_rongyu .list_box_bottom li{width:98%;}
+.about_rongyu .rongyu_img{height:auto;}
+
+/*2016-12-29发展战略*/
+.rcln_box3 .glgw_box, .rcln_box3 .zygw_box{width:100%;}
+.rcln_box3 .glgw_box{right:0;}
+.rcln_box3 .zygw_box{left:0;}
+.rcln_box4 li{margin-bottom:20px;}
+
+
+/*2017-01-05*/
+.logo{width:56%;clear:none;float:left;margin:8px 0 15px;}
+.logo a{width:100%;}
+.cen_box2 .cen2_scroll .slide_nav a{width:4%;height:2px;margin: 0 10px;}
+.cen_box3 .channl_title,.cen-map-top .cen3-menu{text-align:center;}
+.cen_box4 img{display:none;}
+.cen_box4 .c_tit{color:#555;position:static;}
+.cen_box4 .maxWrap{height:auto;}
+.cen_box6 .cover .title{margin-top:10%;}
+.cen_box6 .cover .m_detail{display:none;}
+.foot_bottom{padding: 20px 0px 30px;}
+.about_history .tab_b{display:none;}
+.honor_list .threeLayer_menu ul{width:100%;}
+.honor_list .threeLayer_menu .wrap{padding-top:20px;}
+.honor_list .threeLayer_menu{height:auto;background-size:500% 100%;}
+.news_home .part3_l .part3_l_bd .list_titl{width:100%;}
+.news_home .part3_l .part3_l_bd ._list_hd{height:auto;}
+.news_home .part3_l .part3_l_bd .list_time{float:none;display:block;}
+.news_home .part3_l .part3_l_bd ._list_box{padding:14px 0px;}
+.news_home .part3_l .part3_hd{margin-bottom:20px;}
+.news_home .part3_r ._text_box{padding:94px 10px;}
+.news_home .part3_r li{height:auto;min-height:256px;}
+.news_home .part3_r .li2,.news_home .part3_r .li3{display:none;}
+.news_home .part4 .part4_bd ._list_box{padding:20px 0px;}
+.news_home .part4 .part4_hd{margin-bottom:20px;}
+.about_home .part3 .part3_bd .number{font-size:30px;}
+.about_jianjie{padding-top:60px;}
+.about_callus .part1 .part1_main dd .map_main{width:84%;}
+.about_callus .part1 .part1_main dd a{word-break: break-all;}
+.news_home .part1_hd ._text_l{line-height:32px;}
+.news_home .part1 .part_hd ._more{float:left;}
+.news_home .part2 .part2_bd ._l_video_list ._video_title{font-size:14px;}
+.shili_home .part_bd .bd_r_box .r_box01 .rect-50{padding-bottom:100%;}
+.inter_yunying_detail .inter_yunying_part2{height:auto;}
+.inter_yunying_part2 .arr_btn{display:none;}
+
+.shili_shangshi .part1 .list_box_r .box_r_bd{height:auto;}
+.cen-map-top .inter-map-tab{background:none;}
+ .inter_menu{display:none;}
+ .inter-box2 .UnpcPush{display:none;}
+ .inter-map-top .word .p .m_detail{margin-top:20px;}
+ .inter_activity_part2 .part2_hd{background:none;}
+ .inter_activity_part2 .threeLayer_menu li{width:100%;background-color: #dbdbdb;}
+ .inter_activity_part2 .threeLayer_menu li.cur{background-color: #ce1421;}
+.job_home_banner .banner_main li{margin-bottom:1px;}
+.rcln_box3 .box_main .list_title .title_line{width:200%;}
+.cen_box3{background:none;}
+.about_home .part2_box li ._list_l_box{background-size:100% 100%;}
+.shze_home_part2 ._list_l_box .list_main .list_main_l{width:66%;margin:0 auto; float:none;}
+.datalist{width:150%!important;}
+
+/* <=320 */
+@media only screen and (max-device-width: 321px){
+
+/*2016-12-02*/
+.Form-J1 .Form-J1-li input{width:68%;}
+.Form-J1 .Form-J1-li input._yzm{width:22%;}
+
+
+}

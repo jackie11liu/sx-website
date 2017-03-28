@@ -1,0 +1,413 @@
+/*
+* name: Pad && MiddleScreen StyleSheet
+* version: v1.1.1
+* update: 768 bug
+* date: 2016-03-12
+*/
+
+/* <1024 */
+.rolling > .rolling-box .tansDelay00{transition-delay: 0s;-webkit-transition-delay: 0s;}
+.rolling > .rolling-box .tansDelay200{transition-delay: 0s;-webkit-transition-delay: 0s;}
+.rolling > .rolling-box .tansDelay400{transition-delay: 0s;-webkit-transition-delay: 0s;}
+.rolling > .rolling-box .tansDelay600{transition-delay: 0s;-webkit-transition-delay: 0s;}
+.rolling > .rolling-box .tansDelay800{transition-delay: 0s;-webkit-transition-delay: 0s;}
+.rolling > .rolling-box .tansDelay1000{transition-delay: 0s;-webkit-transition-delay: 0s;}
+.rolling > .rolling-box .tansDelay1200{transition-delay: 0s;-webkit-transition-delay: 0s;}
+.rolling > .rolling-box .tansDelay1400{transition-delay: 0s;-webkit-transition-delay: 0s;}
+
+
+/*通用头部*/
+.bodyMain{padding-top:0;margin-bottom:0;}
+.pageHeader{position:relative;}
+.nav{display:none;}
+.mobile_key{display:block;float: right;font-size:32px;margin-top:15px;color: #fff;background-color: #0075c2;height: 40px;width: 40px;line-height: 40px;text-align: center;}
+.mobile_key i{margin:0;line-height: 20px;vertical-align: top;color:#fff;margin-top: 15px;height:20px;}
+.head_lang{margin-left:1px;}
+.head_bottom{padding-bottom:10px;}
+
+/*首页中间区域*/
+.videoBanner{position:relative;height:auto;top: 0;}
+.videoBanner .banner{height:0;padding-bottom:56.25%;}
+.banner img{left:0;width:100%;top:0;}
+.videoBanner .vbtn{right:5%;margin-right:0;}
+.videoBanner #video{display:none;}
+.cen_box2 li{height:169px;}
+.cen_box5 .pbox .info .bdsharebuttonbox{display:none;}
+.cen_box5 .pbox .info .p{display:none;}
+.cen_box5 .last .pbox .columns{margin-top:23px;}
+.cen_box6{margin-bottom:0;}
+
+
+/*通用底部*/
+.pageFooter{position:static;height:auto;}
+.foot_top .f_dl4{display:none;}
+.foot_top .f_dl3 dd{overflow-y:auto;}
+.foot_top .f_dl{width:20%;}
+.foot_top .f_dl3{width:32%;margin-right: 0;}
+.foot_top .f_logo{margin-right: 10%;}
+
+
+/*企业文化*/
+.about_wenhua .part1_hd{padding:0px 20px;}
+.about_wenhua .part1_bd ._box{padding: 56px 20px 68px 40px;}
+
+/*联系我们*/
+.about_callus .part1 .part1_main{margin-left:-512px;}
+.widget-job-2 ._jc_box dd{word-break:break-all}
+
+/*亨通简介*/
+.about_jianjie .part3 .part3_l_box{padding: 40px 70px 40px 85px;}
+.about_jianjie .part3 .part3_r_box{padding: 70px 24px 76px 66px;}
+.about_jianjie .part3 .part3_r_bd ._tab_t_box .tab_t{padding: 10px 24px;}
+.about_jianjie .part3 .part3_r_bd .tab_c .img-slider li{transform:scale(0.6)!important;-moz-transform:scale(0.6);-webkit-transform:scale(0.6);}
+.about_jianjie .part3 .part3_r_bd .tab_c .img-slider li.roundabout-in-focus{transform:scale(1)!important;-moz-transform:scale(1);-webkit-transform:scale(1);}
+.about_jianjie .part3 .part3_r_box{padding:30px 30px 80px;background-size:100% 100%;}
+
+/*关于亨通综合*/
+.about_home .part2 ._list_l_box{padding: 8px 10px 9px 10px;}
+.about_home .part3 .wrap{padding:60px;}
+.about_home .part3 .part3_bd .number .border_ico{display:none;}
+
+/*创始人*/
+.csr_box1 .cs_content .pbox{height: 537px;overflow: hidden;}
+.csr_box1 .cs_content .p{height: 331px;overflow-y: auto;}
+.csr_box3 .cs_prev{left:0;}
+.csr_box3 .cs_next{right:0;}
+.csr4_zt_Video .zt_video .bd{height:366px;}
+.honorScroll{overflow-y: auto;}
+
+/*专题页*/
+.zt-medias-box .zt-media{width:48%;}
+.zt-medias-box .zt-video-box{width:50%;}
+.special_list{height:auto;}
+.special_box .zt_prev{left:0;}
+.special_box .zt_next{right:0;}
+.zt-pics-list .bd{height:auto;}
+
+/*发展历史*/
+.about_history .history_bd .even ._list_r ._r_year{left:-38px}
+.about_history .history_bd .odd ._list_r ._r_year{right:-39px;}
+
+/*产业布局*/
+.cybj_list li .pbox{padding: 5% 10%;}
+
+/*新闻综合*/
+.news_home .part1_bd ._bd_r ._list_r{width:68%;}
+.news_home .part1_bd ._bd_r ._list_box{padding:12px 30px 12px 16px;}
+.news_home .part1_bd ._bd_r li{margin-bottom:14px;}
+.news_home .part2 .part2_bd ._bd_l_box{padding: 20px 34px 24px;}
+.news_home .part3_r ._text_box{padding: 30px 27px 42px;}
+.news_home .part2 .part2_bd ._l_box_text{margin-bottom:50px;}
+.news_home .part3_r li{min-height:154px;}
+
+/*创新发展*/
+.cxfz-list li .pbox{padding-left:5%;}
+
+/*亨通实力综合*/
+.shili_home .part_bd .bd_r_box .r_box .font_box .text{margin-bottom: 38px;}
+.shili_home .part_bd .bd_r_box .r_box .font_box{padding: 30px 60px 30px 42px;}
+.shili_home .part_bd .bd_l .main_box{padding-right:180px;}
+
+.shili_home .part_bd .bd_r_box .r_box{height:256px;}
+
+/*管理学院*/
+.xy-Tit ._xy_en{ font-size: 100px;}
+.cen-news .-news-top,.cen-news .-news-list{float:none;}
+.cen-news .-news-top{width:70%;margin:0 auto 20px;}
+.cen-news .-news-list{width:100%;}
+
+
+/*上市公司*/
+.shili_shangshi .part1 .hd_title,.shili_shangshi .part1 .list_link{width:100%;}
+
+/*校园招聘*/
+.job_school .part2_bd dl{width:16%;margin-right:5%;}
+.job_school .part2_bd dl .arr_ion{right: -42px;}
+.job_school .part2_bottom .bottom_list{margin-right:60px;margin-bottom: 10px;}
+
+/*招聘综合*/
+.job_home_banner .banner_main{width:1000px;margin-left:-500px;}
+.job_home_part2 .part2_r{height:auto;}
+.job_home_part2 .part2_r_box .text{margin-bottom:30px;}
+.job_home_part2 .part2_r_box{padding: 30px 10% 18px 80px;}
+
+/*亨通慈善基金会*/
+.cs-items .it1, .cs-items .it3, .cs-items .it4{width:29%;}
+.cs-items .it2{width:71%;}
+.cs-items .it5{width:42%;}
+.cs-items .it5 .pbox{padding:2% 7%;}
+.cs-items .items{height:277px;}
+.htcs-box4 .zt-pics-list .zt_prev{left:0;}
+.htcs-box4 .zt-pics-list .zt_next{right:0;}
+.gongcheng_tab .tab_menu_box .tab_prev{left:0;}
+.gongcheng_tab .tab_menu_box .tab_next{right:0;}
+.gongcheng_tab .tab_menu{height:126px;}
+
+/*社会责任综合*/
+.shze_home_part2 ._list_l ._list_l_box{padding:0;min-height:510px;}
+.shze_home_part2 ._list_l_box .list_main{padding: 70px 86px 12px 80px;}
+.about_home .part2_box li.odd ._list_l ._list_l_box{min-height:315px;}
+
+/*社会责任-理念*/
+.shzr_linian_part2 .list_box{padding:20px;}
+.shzr_linian_part1 .part1_hd{padding:10px 0px 100px;}
+.shzr_linian_part1 .part1_hd:before{right:0;display:none;}
+.shzr_linian_part1 .part1_hd:after{left:0;display:none;}
+
+/*海外活动*/
+.inter_activity_part1 .part1_r_bd .time{width:20%;}
+.inter_activity_part1 .part1_r_bd{height:158px;}
+.inter_activity_part1 .part1_r_box{padding: 35px 40px 37px;}
+
+/*全球运营*/
+.inter_yunying_part1{margin-bottom:50px;}
+.inter_yunying_part1 .part1_bd_r .bd_r_box{padding: 50px 50px 40px 40px;}
+.inter_yunying_part1 .part1_bd_r .bd_r_text{height:109px;}
+.inter_yunying_part2 .arr_btn{z-index:10;}
+.inter_yunying_part2 .arr_btn.arr_prev{left:0;}
+.inter_yunying_part2 .arr_btn.arr_next{right:0;}
+
+/*20161121*/
+.about_home .part2 .c{margin:0;}
+.about_home .more{margin-bottom:18px;}
+.about_jianjie .part3_r{height:auto;}
+.about_jianjie .part3 .part3_r_bd ._tab_t_box{margin-bottom:134px;}
+.about_jianjie .part3 .part3_r_box{padding: 30px 30px 210px;}
+
+/*国际亨通综合*/
+.global-items .pbox .info .img{margin-top:0;}
+.inter_menu{width: 48%;}
+
+/*企业文化*/
+.about_wenhua .part1_hd ._text{margin-bottom:20px;}
+.about_wenhua_news .part1_bd .list_l{min-height: 216px;}
+.about_wenhua_news .part1_bd .l_box{padding: 12px 40px 12px 44px;}
+
+/*品牌价值*/
+.shili_pinpai .part4_box{padding-right:0;}
+
+/*全球运营*/
+.inter_yunying_part1 .part1_bd_r .bd_r_box{padding: 10px 50px 10px 40px;}
+.inter_yunying_part1 .part1_bd_r .bd_r_text{height:auto;min-height:60px;}
+
+/*人才理念*/
+.j-ln-box1 .img_box{width:100%; margin-right:0;}
+.j-ln-box1 .text_box{width:100%; padding-left:0;}
+.j-ln-box3 .text_box{width:100%;position:static;}
+.j-ln-box3 .img_box{width:100%;}
+.j-ln-box3 .Maxwrap{height:auto;}
+.j-ln-box3 .text_box .text_main{padding:34px;}
+
+/*2016-12-02*/
+.pinpai_list li{width:33%}
+.videoBanner .i_banner_ico{display:none;}
+.banner.ie .video_img{display:inline-block;}
+
+/*2016-12-08*/
+.cs-items .items_2 .cishan_logo{margin: 2% auto;}
+
+/*2016-12-29创始人*/
+.csr_box1 .csr_box1_r{width:28%;}
+.csr_box1 .csr_box1_l .img{width:36%;}
+.csr_box1 .cs_content{width:63%;}
+.csr_box1 .cs_content .pbox{height:auto;}
+
+/*2016-12-29创新发展*/
+.cen_box2 li{height:auto;}
+.cxfz_box3 .box3_l_title{height:100px;line-height:100px;}
+.cxfz_box3 .box3_l_list{padding: 18px 30px;}
+.cxfz_box7 .box7_l_list{height:300px;}
+
+/*2016-12-29企业荣誉*/
+.about_rongyu .rongyu_title_box{width:73%;}
+
+/*2016-12-29实力综合*/
+.shili_home .arrs{bottom:37%;}
+
+/*2016-12-29发展战略*/
+.rcln_box3{padding:20px;}
+.rcln_box4{padding:0;}
+.rcln_box4 .li_box{padding:0;}
+.rcln_box4 .list_box{margin:0 auto;}
+
+/*2017-02-10*/
+.cen-map-top .inter-map-tab{background:none;}
+
+
+/* <768 */
+@media only screen and (max-device-width: 769px){
+/*首页中间区域*/
+.cen_box2 li{height:127px;}
+.cen_box2 li .m_detail{display:none;}
+.cen3-p{display:none;}
+.cen-map-top .inter-map-tab{height:auto;}
+.widget-area li .s1{font-size:44px;}
+.cen_box5 .pbox .columns{margin-top:21px;}
+.cen_box5 .m_detail{width:20%;}
+.cen_box6 .cover .tit_en{font-size:24px;}
+
+/*通用底部*/
+.foot_top .f_dl{width:18%;}
+.foot_top .f_dl3{width:30%;}
+.foot_bottom .l{padding:10px 0px;}
+.foot_bottom .l,.foot_bottom .r{width:100%;}
+
+
+/*联系我们*/
+.about_callus .part1 .part1_main{margin-left:-384px;}
+
+/*亨通简介*/
+.about_jianjie .part1 .part1_wrap{width:100%;left:0;margin-left:0;}
+.about_jianjie .part1 .part1_text_box{padding: 160px 10px 0px;}
+.about_jianjie .part2 .part2_box{padding: 90px 0px 110px;}
+.about_jianjie .part3 .part3_r_box{background-size:100% 100%;}
+.about_jianjie .part4{padding: 110px 0px 88px;}
+
+/*创始人*/
+.csr4_zt_Video .zt_video .bd{height:276px;}
+.honor_img{max-width: 100%;}
+
+/*出版物详情*/
+.cbw_detail .cbw_right .cbw_picitems{padding:40px 9%;}
+.cbw_detail .cbw_right .cbw_picitems .picitems{height:auto;}
+
+
+/*专题页*/
+.zt-medias-box .zt-media,.zt-medias-box .zt-video-box{width:100%;float:none;}
+.zt-video-box .zt-video{height:0;padding-bottom:75%;margin-bottom:20px;}
+.special_list li .pbox .p{height:69px;}
+
+/*发展历史*/
+.about_history .history_bd .even ._list_r ._r_year{left:-30px}
+.about_history .history_bd .odd ._list_r ._r_year{right:-30px;}
+.about_history .history_bd ._list_r ._r_main{padding-right:0px;}
+.about_history .history_bd .odd ._list_r ._r_main{padding-left:0px;}
+
+/*新闻列表*/
+.news_list .news_list_main ._list_r{width:78%;}
+.news_list .news_pic_list ._title_hover{display:none;}
+
+/*产业布局*/
+.cybj_list li .pbox .title{margin-bottom:0;}
+.cybj_list li .pbox .p{height:115px;}
+.cybj_list li .m_detail{margin-top:18px;}
+
+/*管理学院*/
+.xy-Tit ._xy_en{font-size:73px;}
+
+
+/*新闻综合*/
+.news_home .part1_bd ._bd_l{margin-bottom:20px;}
+.news_home .part1_bd ._bd_l,.news_home .part1_bd ._bd_r{width:100%;}
+.news_home .part3_r ._text_box{padding: 20px 6px 27px;}
+.news_home .part3_r ._text_box ._title{font-size:24px;}
+.news_home .part2{height:auto;background-size:100% 100%;padding-bottom:30px;}
+.news_home .part3_r li{min-height:115px;}
+
+/*亨通实力综合*/
+.shili_home .part_bd .bd_l .main_box{padding-right: 20px;}
+.shili_home .part_bd .bd_r_box .r_box .font_box{padding: 20px 10px 16px 12px;}
+.shili_home .part_bd .bd_r_box .r_box .font_box .title{margin-bottom:20px;}
+.shili_home .part_bd .bd_r_box .r_box .font_box .text{margin-bottom:10px;}
+
+/*品牌价值*/
+.shili_pinpai .part1_hd .text{padding: 0px 10px;}
+.shili_pinpai .part1_bd{padding:20px 140px;}
+.shili_pinpai .part1_bd .honor_prev{left:0;}
+.shili_pinpai .part1_bd .honor_next{right:0;}
+
+/*校园招聘*/
+.job_school .part2_bd dl .arr_ion{display:none;}
+.job_school .part2_bd dl{width:20%;margin-right:0;}
+.job_school .part2_bd dd{padding:0px 10px;}
+
+/*人才理念*/
+.j-ln-word .even .img,.j-ln-word .even .word_info,.j-ln-word li .img,.j-ln-word li .word_info{float:none;width:100%;}
+.j-ln-word li .img{text-align: center;}
+.j-ln-word li .word_info .pbox{padding:3% 5%;}
+.j-ln-word .even .word_info .pbox{padding-left:5%;}
+
+/*招聘综合*/
+.job_home_banner .banner_main{width:768px;margin-left:-384px;}
+.job_home_banner .banner_main .list_box{padding:24px 4px;}
+
+/*社会责任综合*/
+.about_home .part1_box .part1_main .number{font-size:60px;}
+.shze_home_part3 .part3_bd .bd_title{padding:0px 10px;}
+
+/*社会责任理念*/
+.shzr_linian_part2 .hd_text{padding: 0px 0px;}
+.shzr_linian_part1 .part1_bd li{width:32%;margin-right:0;}
+
+/*全球运营*/
+.inter_yunying_part1 .part1_bd_l,.inter_yunying_part1 .part1_bd_r{width:100%;}
+.threeLayer_menu li.cur:after{display:none;}
+.inter_yunying_part1 .part1_hd li{width:100%;margin-bottom:20px;}
+.inter_yunying_part1 .part1_bd_r .bd_r_text{height:auto;}
+
+/*亨通慈善基金会*/
+.cs-items .it3, .cs-items .it4{display:none;}
+.cs-items .it5{width:100%;}
+
+
+/*国际亨通综合*/
+.inter-map-top .word,.inter_menu{float:none;width:100%;}
+.inter-map-top .word{margin-bottom:20px;}
+.inter-box3 .m_detail{width:20%;}
+.inter-box1 .channel_p{width:100%;}
+.global-items .pbox .info .p{display:none;}
+.global-items .pbox .info .title{font-size:16px;}
+
+/*品牌价值补充*/
+.shili_pinpai .part3 .part3_bd{padding:0px;}
+.shili_pinpai .part4_l_box{padding-right:0px;}
+
+/*2016-11-30*/
+.cen_box2 .cover .title{margin: 8% 0 10px;}
+
+/*品牌价值*/
+.shili_pinpai .part4{background:none;}
+.shili_pinpai .part4_l{background:#F4F8F9;padding:40px 0px;}
+.shili_pinpai .part4_r{background:#EDF2F6;padding:40px 0px;}
+.shili_pinpai .part4_r .part4_box{padding-left:10px;}
+.shili_pinpai .part4_box{padding:0px 10px;}
+.shili_pinpai .part4_r .part4_bd li{width:10%;margin-right:6%;}
+
+/*人才理念*/
+.j-ln-box2{height:auto;background-size:200% 100%;}
+.j-ln-box2 .list_box li{margin-bottom:20px;}
+
+/*2016-12-2*/
+.Form-J1 .Form-J1-li input._yzm{width:36%;}
+.foot_bottom{padding:0;}
+.gongcheng_tab .tab_menu li{width:16%;}
+.about_history .history_hd .hd_title{font-size:16px;}
+
+/*20116-12-07创新发展*/
+.cxfz_box2_main .list_box{padding: 0px 10px;}
+.cxfz_box3 .box3_l_box{padding-right:0px;padding-bottom:20px;}
+.cxfz_box4 .cxfz_box4_main .list_ico{margin: 1px auto 1px;}
+
+/*2016-12-08*/
+.cs-items .items_3{height:auto;}
+
+/*2016-12-29创新发展*/
+.cxfz-box1 .channel_p, .cxfz_box5 .channl_p, .cxfz_box3 .channel_p{padding:0 20px;}
+.cen_box2 li{height:auto;}
+.cxfz_box3 .box3_l,.cxfz_box3 .box3_r{width:100%;}
+.cxfz_box3 .box3_l_title{background-size:100% 100%;}
+.cxfz_box4 .cxfz_box4_main .list_ico{margin: 14px auto 1px;}
+.cxfz_box4 .cxfz_box4_main li{width:19%;margin:0;}
+
+/*2016-12-29企业荣誉*/
+.about_rongyu .rongyu_title_box{width:65%;}
+.about_rongyu .rongyu_title_list{padding:0 20px;}
+.about_rongyu .rongyu_img{height:120px;}
+
+/*2016-12-29发展战略*/
+.rcln_box1 .list_box{padding:0 20px;}
+.rcln_box3 .box_main .list_title{width:22%;}
+.rcln_box3{padding:0;}
+.recln_part .channel_p{padding:20px;}
+
+}

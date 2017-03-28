@@ -1,0 +1,183 @@
+<script language="JavaScript">
+        function showSites() {
+            document.getElementById("websites").style.display = "block";
+        }
+        function hideSites() {
+            document.getElementById("websites").style.display = "none";
+        }
+    </script>
+
+    <script src="${CTPATH}/js/sxGroup.js"></script>
+        <script src="${CTPATH}/js/sxGroup.config.js"></script>
+        <script src="${CTPATH}/js/api_base.js"></script>
+
+        <script src="${CTPATH}/js/logger.js"></script>
+        <script src="${CTPATH}/js/manifest.js"></script>
+        <script src="${CTPATH}/js/partners.js"></script>
+        <script src="${CTPATH}/js/seajs-localcache.js"></script>
+        <script src="${CTPATH}/js/share_api.js"></script>
+        <script src="${CTPATH}/js/share_view.js"></script>
+        <script src="${CTPATH}/js/superslide.js"></script>
+        <script src="${CTPATH}/js/tangram.js"></script>
+        <script src="${CTPATH}/js/wow.js"></script>
+        <script type="text/javascript">
+            $('.head_r .li02').click(function(){alert("hello");
+                $(this).find('.option').stop().slideToggle('128');
+            })
+            $('.head_r .li02').mouseleave(function(){
+                $(this).find('.option').stop().slideUp('128');
+            })
+        </script>
+
+
+        <link rel="stylesheet" href="${CTPATH}/css/ui.css"/>
+            <link rel="stylesheet" href="${CTPATH}/css/grid12.css"/>
+            <link rel="stylesheet" href="${CTPATH}/css/style.css"/>
+            <link rel="stylesheet" href="${CTPATH}/css/responsive.css"/>
+            <link rel="stylesheet" href="${CTPATH}/css/animate.css"/>
+
+            <link rel="stylesheet" href="${CTPATH}/css/share_style0_24.css"/>
+            <link rel="stylesheet" href="${CTPATH}/css/video-js.css"/>
+            <link rel="stylesheet" href="${CTPATH}/css/font.css"/>
+
+            <section class="videoBanner">
+                    <div class="banner slide slide_effect_slide">
+                        <ul style="transform: translateZ(0px) translateX(-1583px); height: 522px; width: 4749px; transition: all 0s ease 0s;" class="slide_wrap">
+                            <li style="width: 1583px;" class="slide_c active"><img src="${CTPATH}/images/9df7fc0fd3fa42e7b4cc947f7766310a.jpg" alt="" class=""> </li>
+                            <li style="width: 1583px;" class="slide_c slide_next"> <img src="${CTPATH}/images/b1d0aa00b14145cda4201c2b50703d55.jpg" alt="传输进步 繁荣社会" class=""> </li>
+                            <!--<li style="width: 1583px;" class="slide_c">
+                                <video loop="" id="video" poster="">
+                                    <source src="%E4%BA%A8%E9%80%9A%E9%9B%86%E5%9B%A2_files/bg_movie.mp4" type="video/mp4;">
+                                </video>
+                                <div class="cover">
+                                </div> <i class="i_banner_ico" style="display: block;"></i> <img src="%E4%BA%A8%E9%80%9A%E9%9B%86%E5%9B%A2_files/cc5ad87b8e1f4304bc096ba08843f659.jpg" alt="亨通宣传片" class="video_img" style=""> </li>-->
+                        </ul>
+                        <div class="vbtn">
+                            <a href="javascript:void(0);" class="stop arr_prev"></a>
+                            <a href="javascript:void(0);" class="play arr_next"></a>
+                        </div>
+                        <div class="slide_nav"><a class="nav_prev">1</a><a class="on">2</a></div></div>
+                </section>
+
+
+
+
+                 <!--footer-->
+                    <footer class="pageFooter">
+                        <div class="foot_top">
+                            <div class="wrap fix">
+                                <div class="f_logo l">
+                                    <a href="http://www.hengtonggroup.com/"><img src="${CTPATH}/images/logo.gif" alt="双欣集团"></a>
+                                </div>
+                                <dl class="f_dl f_dl1 l">
+                                    <dt>
+                                        <a href="#">关于双欣</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="#">双欣简介</a>
+                                        <a href="#">创始人</a>
+                                        <a href="#">发展历程</a>
+                                        <a href="#">企业荣誉</a>
+                                        <a href="#">企业文化</a>
+                                        <a href="#">联系我们</a>
+                                    </dd>
+                                </dl>
+                                <dl class="f_dl f_dl2 l">
+                                    <dt>
+                                        <a href="#">新闻中心</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="#">热点资讯</a>
+                                        <a href="#">行业资讯</a>
+                                        <a href="#">媒体视角</a>
+                                        <a href="#">专题报道</a>
+                                        <a href="#">亨通内刊</a>
+                                        <a href="#">视频中心</a>
+                                        <a href="#">最新公告</a>
+                                    </dd>
+                                </dl>
+                                <dl class="f_dl f_dl3 l">
+                                    <dt>
+                                        企业链接
+                                    </dt>
+                                    <dd>
+                                        <div class="bd">
+                                            <div class="tempWrap" style="overflow:hidden; position:relative; height:150px"><ul style="top: 0px; position: relative; padding: 0px; margin: 0px;">
+                                                <li style="height: 25px;"><a href="http://www.shuangxinpva.com/" target="_blank">内蒙古双欣环保材料股份有限公司</a> </li>
+                                                <li style="height: 25px;"><a href="http://www.shuangxinlng.com/" target="_blank">鄂尔多斯市宏基亿泰能源有限公司</a> </li>
+
+                                            </ul></div>
+                                        </div>
+                                        <div class="hd">
+                                            <a href="javascript:;" class="f_dl3_arr dl3_arr_prev"></a>
+                                            <ul><li class="on">1</li><li class="">2</li></ul>
+                                            <a href="javascript:;" class="f_dl3_arr dl3_arr_next"></a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="f_dl4 r">
+                                    <dt>
+                                        互动专区
+                                    </dt>
+                                    <dd>
+                                        <ul class="f_erwm fix">
+                                            <li class="li1"><img src="${CTPATH}/images/t6.png" alt="双欣集团"><p>双欣集团</p></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="foot_bottom">
+                            <div class="wrap fix">
+                                <div class="l">
+                                    Copyright ©
+                                    <script fixed="true" type="text/javascript">document.write((new Date()).getFullYear());</script>2017
+                                    <a href="http://www.sxzyjt.com/">双欣集团</a> 版权所有
+                                    <span class="_beian">备案号：[ <a href="http://www.miibeian.gov.cn/" target="_blank">蒙ICP备10001287号</a> ]</span>
+                                </div>
+                                <div class="r">
+                                    <a href="#">网站地图</a>
+                                    <em>|</em>
+                                    <a href="Y">法律声明</a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!--footer end-->
+
+
+
+
+
+index.html底部
+
+                      </section>
+                      <div style="display:none;" id="jr_analysis">
+                       <script src="${CTPATH}/js/z_stat.js"></script>
+                       <script src="${CTPATH}/js/core.js"></script>
+                      </div>
+
+
+                    <script type="text/javascript">
+
+
+                    seajs.use('js/index');
+
+                    </script>
+                    <div id="boxBlank" ontouchmove="return false" onselectstart="return false"></div></body></html>
+
+
+
+
+
+                    <script src="${CTPATH}/js/sxGroup.js" id="sxGroupConfig" domain="http://localhost:8080/sx-group"></script>
+                        <script src="${CTPATH}/js/sxGroup.config.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="${CTPATH}/css/ui.css" />
+    <link rel="stylesheet" href="${CTPATH}/css/grid12.css" />
+    <link rel="stylesheet" href="${CTPATH}/css/style.css" />
+    <link rel="stylesheet" href="${CTPATH}/css/responsive.css" />
+    <link rel="stylesheet" href="${CTPATH}/css/animate.css" />

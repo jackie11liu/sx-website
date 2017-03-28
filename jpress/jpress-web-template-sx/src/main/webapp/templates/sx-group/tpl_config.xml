@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<infos>
+		<title>sx-group</title>
+		<id>sx-group</id>
+		<description>双欣集团模版</description>
+		<author>jackie</author>
+		<authorWebsite>http://www.sxzyjt.com</authorWebsite>
+		<version>v1.0</version>
+		<versionCode>1</versionCode>
+		<updateUrl>http://www.sxzyjt.com</updateUrl>
+	</infos>
+
+	<module title="文章" name="article" list="所有文章" add="撰写文章" comment="评论">
+		<taxonomy title="分类" name="category" formType="select" />
+		<taxonomy title="专题" name="feature" formType="select" >
+			<metadata dataType="input" name="author" title="专题作者"  description="这个数据只是模板自定义模型的测试。" placeholder="请填写作者用户名"/>
+		</taxonomy>
+		<taxonomy title="标签" name="tag" formType="input" />
+		
+		<metadata dataType="input" name="_meta1" title="元数据1"  placeholder="元数据测试1"/>
+		<metadata dataType="input" name="_meta2" title="元数据2"  placeholder="元数据测试2"/>
+	</module>
+
+	<module title="页面" name="page" list="所有页面" add="新建页面" comment="评论">
+	</module>
+
+	<module title="关于双欣" name="about" list="所有关于双欣" add="编辑此栏目" comment="评论">
+		<taxonomy title="分类" name="category" formType="select" />
+		<taxonomy title="标签" name="tag" formType="input" />
+		<!--<taxonomy title="双欣简介" name="companyProfile" formType="select" />
+		<taxonomy title="创始人" name="founder" formType="select" />
+		<taxonomy title="发展历程" name="developmentHistory" formType="select" />
+		<taxonomy title="企业荣誉" name="honor" formType="select" />
+		<taxonomy title="企业文化" name="culture" formType="select" />
+		<taxonomy title="联系我们" name="contact" formType="select" />
+		<taxonomy title="专题" name="feature" formType="select" >
+			<metadata dataType="input" name="author" title="专题作者"  description="这个数据只是模板自定义模型的测试。" placeholder="请填写作者用户名"/>
+		</taxonomy>
+		<taxonomy title="标签" name="tag" formType="input" />
+
+		<metadata dataType="input" name="_meta3" title="元数据3"  placeholder="元数据测试3"/>-->
+	</module>
+
+	<module title="新闻中心" name="news" list="所有新闻" add="撰写新闻" comment="评论">
+		<taxonomy title="新闻分类" name="category" formType="select" />
+		<taxonomy title="标签" name="tag" formType="input" />
+	</module>
+	<module title="实力双欣" name="strength" list="成员企业" add="编辑子公司信息" comment="评论">
+		<taxonomy title="子公司分类" name="category" formType="select" />
+		<taxonomy title="标签" name="tag" formType="input" />
+	</module>
+	<module title="产品展示" name="strength" list="所有产品" add="编辑产品信息" comment="评论">
+		<taxonomy title="产品分类" name="category" formType="select" />
+		<taxonomy title="标签" name="tag" formType="input" />
+	</module>
+	<module title="人才发展" name="job" list="所有招聘" add="撰写招聘信息" comment="评论">
+		<taxonomy title="招聘分类" name="category" formType="select" />
+		<taxonomy title="标签" name="tag" formType="input" />
+	</module>
+
+	<thumbnail name="t1" size="780 x 240" />
+	<thumbnail name="t2" size="240 x 140" />
+	<thumbnail name="t3" size="600 x 300" />
+	<thumbnail name="t4" size="300 x 300" />
+
+</config>
