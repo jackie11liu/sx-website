@@ -1,0 +1,166 @@
+<section class="content-header">
+	<h1>横幅广告设置</h1>
+</section>
+
+<!-- Main content -->
+<section class="content">
+
+	<form action="${CPATH}/admin/option/save" method="POST" id="form" enctype="multipart/form-data">
+		<input type="hidden" name="ucode" value="${ucode}">
+		<input type="hidden" name="autosave" value="jpblog_wechat_pay_enable,jpblog_wechat_pay_image,jpblog_banner_image1,jpblog_banner_url1,jpblog_banner_image2,jpblog_banner_url2,jpblog_banner_image3,jpblog_banner_url3,jpblog_banner_image4,jpblog_banner_url4,jpblog_wechat_pay_tips">
+		<div class="row">
+
+			<div class="col-xs-12">
+			<h4 class="jp-set-title">广告设置</h4>
+			<ul class="list-unstyled">
+				<!--第一张-->
+				<li class="jp-set-pad">
+					<div class="col-sm-3 ">
+						<div class="jp-set-info ">banner广告图片1</div>
+					</div>
+
+					<div class="col-sm-9  jp-set-title-line">
+						<div class="col-sm-6 jp-table-distance-top ">
+							<img alt="" src="${CPATH}${OPTION('jpblog_banner_image1')!}" style="width:450px;hight:298px;">
+							<br />
+							<input name="jpblog_banner_image1" type="file">
+							<input class="form-control input-md" type="text" name="jpblog_banner_image1" value="${OPTION('jpblog_banner_image1')!}">
+							
+						</div>
+					</div>
+
+					<div class="clr"></div>
+				</li>
+				<li class="jp-set-pad">
+					<div class="col-sm-3 ">
+						<div class="jp-set-info ">banner图片1连接地址</div>
+					</div>
+					<div class="col-sm-9  jp-set-title-line">
+						<div class="col-sm-6 jp-table-distance-top ">
+							<input class="form-control input-md" type="text" name="jpblog_banner_url1" value="${OPTION('jjpblog_banner_url1')!}">
+						</div>
+					</div>
+					<div class="clr"></div>
+				</li>
+				<!--第二张-->
+				<li class="jp-set-pad">
+					<div class="col-sm-3 ">
+						<div class="jp-set-info ">banner广告图片2</div>
+					</div>
+
+					<div class="col-sm-9  jp-set-title-line">
+						<div class="col-sm-6 jp-table-distance-top ">
+							<img alt="" src="${CPATH}${OPTION('jpblog_banner_image2')!}" style="width:450px;hight:298px;">
+							<br />
+							<input name="jpblog_banner_image2" type="file">
+							<input class="form-control input-md" type="text" name="jpblog_banner_image2" value="${OPTION('jpblog_banner_image2')!}">
+
+						</div>
+					</div>
+
+					<div class="clr"></div>
+				</li>
+				<li class="jp-set-pad">
+					<div class="col-sm-3 ">
+						<div class="jp-set-info ">banner图片2连接地址</div>
+					</div>
+					<div class="col-sm-9  jp-set-title-line">
+						<div class="col-sm-6 jp-table-distance-top ">
+							<input class="form-control input-md" type="text" name="jpblog_banner_url2" value="${OPTION('jjpblog_banner_url2')!}">
+						</div>
+					</div>
+					<div class="clr"></div>
+				</li>
+				<!--第三张-->
+				<li class="jp-set-pad">
+					<div class="col-sm-3 ">
+						<div class="jp-set-info ">banner广告图片3</div>
+					</div>
+
+					<div class="col-sm-9  jp-set-title-line">
+						<div class="col-sm-6 jp-table-distance-top ">
+							<img alt="" src="${CPATH}${OPTION('jpblog_banner_image3')!}" style="width:450px;hight:298px;">
+							<br />
+							<input name="jpblog_banner_image3" type="file">
+							<input class="form-control input-md" type="text" name="jpblog_banner_image3" value="${OPTION('jpblog_banner_image3')!}">
+
+						</div>
+					</div>
+
+					<div class="clr"></div>
+				</li>
+				<li class="jp-set-pad">
+					<div class="col-sm-3 ">
+						<div class="jp-set-info ">banner图片3连接地址</div>
+					</div>
+					<div class="col-sm-9  jp-set-title-line">
+						<div class="col-sm-6 jp-table-distance-top ">
+							<input class="form-control input-md" type="text" name="jpblog_banner_url3" value="${OPTION('jjpblog_banner_url3')!}">
+						</div>
+					</div>
+					<div class="clr"></div>
+				</li>
+				<!--第四张-->
+				<li class="jp-set-pad">
+					<div class="col-sm-3 ">
+						<div class="jp-set-info ">banner广告图片4</div>
+					</div>
+
+					<div class="col-sm-9  jp-set-title-line">
+						<div class="col-sm-6 jp-table-distance-top ">
+							<img alt="" src="${CPATH}${OPTION('jpblog_banner_image4')!}" style="width:450px;hight:298px;">
+							<br />
+							<input name="jpblog_banner_image4" type="file">
+							<input class="form-control input-md" type="text" name="jpblog_banner_image4" value="${OPTION('jpblog_banner_image4')!}">
+
+						</div>
+					</div>
+
+					<div class="clr"></div>
+				</li>
+				<li class="jp-set-pad">
+					<div class="col-sm-3 ">
+						<div class="jp-set-info ">banner图片4连接地址</div>
+					</div>
+					<div class="col-sm-9  jp-set-title-line">
+						<div class="col-sm-6 jp-table-distance-top ">
+							<input class="form-control input-md" type="text" name="jpblog_banner_url4" value="${OPTION('jjpblog_banner_url4')!}">
+						</div>
+					</div>
+					<div class="clr"></div>
+				</li>
+
+			</ul>
+			</div>
+			
+			<div class="col-xs-12">
+			<h4 class="jp-set-title">统计代码</h4>
+			<ul class="list-unstyled">
+			
+				<li class="jp-set-pad">
+					<div class="col-sm-3 ">
+						<div class="jp-set-info ">第三方统计代码</div>
+					</div>
+					<div class="col-sm-9  jp-set-title-line">
+						<div class="col-sm-6 jp-table-distance-top ">
+							<div class="form-group">
+								<textarea class="form-control" rows="4" name="jpblog_statistical_code">${OPTION('jpblog_statistical_code')!}</textarea>
+								<p>请输入百度、CNZZ等第三方统计代码。</p>
+							</div>
+						</div>
+					</div>
+					<div class="clr"></div>
+				</li>
+			</ul>
+			</div>
+			
+			<!-- /.box -->
+		</div>
+		<div class="row">
+		<div class="col-xs-12">
+			<button type="button" onclick="doSubmit()" class="btn btn-primary">保存更改</button>
+		</div>
+		</div>
+		<!-- /.row -->
+	</form>
+</section>
