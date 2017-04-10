@@ -1,0 +1,209 @@
+<#macro script_import>
+</#macro> 
+<#macro script>
+</#macro> 
+<#macro css_import>
+</#macro> 
+<#macro css>
+</#macro> 
+<#macro layout>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>${WEB_TITLE!WEB_NAME!} - ${WEB_SUBTITLE!}</title>
+  <meta name="keywords" content="${META_KEYWORDS!}">
+  <meta name="description" content="${META_DESCRIPTION!}">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta name="author" content="design by jackie L" />
+
+    <LINK rel="SHORTCUT ICON" href="${CTPATH}/images/favicon.ico"/>
+    <link rel="stylesheet" href="${CPATH}/resources/ui/ui.css" />
+    <link rel="stylesheet" href="${CPATH}/resources/ui/grid12.css" />
+    <link rel="stylesheet" href="${CPATH}/resources/web/css/style.css" />
+    <link rel="stylesheet" href="${CPATH}/resources/web/css/responsive.css" />
+    <link rel="stylesheet" href="${CPATH}/resources/web/css/animate.css" />
+
+    <!--[if lt IE 9]><script src="${CTPATH}/resources/web/lib//H5shiv.js"></script><![endif]-->
+
+    <script src="${CPATH}/resources/modules/seajs/sea.js" id="seajsConfig" domain="http://192.168.10.104:8080/sx-group"></script>
+    <script src="${CPATH}/resources/web/seajs.config.js"></script>
+    <script src="${CPATH}/resources/modules/slide.js"></script>
+    <script src="${CPATH}/resources/modules/tab.js"></script>
+    <script src="${CPATH}/resources/modules/box.js"></script>
+    <link rel="stylesheet" href="${CPATH}/resources/web/css/video-js.min.css">
+    <link rel="stylesheet" href="${CPATH}/resources/web/css/share_style0_24.css">
+    <link rel="stylesheet" href="${CPATH}/resources/web/css/share_popup.css">
+
+</head>
+<body data-w="1583">
+<section class="bodyMain indexMain">
+    <!--header-->
+    <header class="pageHeader">
+        <div class="head_top">
+            <div class="wrap">
+                <ul class="head_r fix">
+                    <li class="li02"><a href="###" class="val">${i18n.get("sx_group")}<i class="ions"></i></a>
+                        <div class="option" style="display: none;" id="websites">
+                            <a href="http://www.shuangxinpva.com/" target="_blank">${i18n.get("environment-friendly_material")}</a>
+                            <a href="http://www.shuangxinlng.com/" target="_blank">${i18n.get("hongjiyitai")}</a>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="head_bottom">
+            <div class="wrap fix">
+                <div class="head_ser r active">
+                    <a href="http://192.168.10.104:8080/sx-group?_locale=zh_CN" class="_val">${i18n.get("language_zh")}</a>
+                </div>
+                <div class="head_lang r pr">
+                    <a href="http://192.168.10.104:8080/sx-group?_locale=en_US" class="_val">EN</a>
+                </div>
+                <nav class="nav r" id="menu">
+                    <ul class="fix">
+                <@jp.contents module="menu" orderBy="order_number">
+                <#if contents?exists>
+                    <#list contents as menuNav>
+                        <#if !(menuNav.parent_id ??)>
+                            <li class="nav_li nav${menuNav_index?if_exists+1}"><a href="${menuNav.text!}" target="" class="nav_a">${menuNav.title!}</a>
+                                <div class="setNav pa" style="display: none; height: 280px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                    <div class="wrap oh pr">
+                                        <div class="setCon l">
+                                            <h3 class="tit">${menuNav.title!}</h3>
+                                            <div class="p">
+                                                <p>
+                                                    ${i18n.get("ceo_talk")}
+                                                </p>
+                                                <p><br></p>
+                                            </div>
+                                        </div>
+                                        <ul class="setMenu l c">
+                                            <#list contents as menu2>
+                                                <#if menu2.parent_id?exists && menu2.parent_id == menuNav.id>
+                                                    <li class="nav${menu2_index?if_exists+7}"><a href="${menu2.text!}" target="">${menu2.title!}</a> </li>
+                                                </#if>
+                                            </#list>
+                                        </ul>
+                                        <div class="set-img r">
+                                            <img src="${CTPATH}/images/eda3b2008b7349fcb2b2608db9ef0013.jpg" alt="" class="" width="100%">
+                                        </div>
+                                    </div>
+                                </div> </li>
+                        </#if>
+                    </#list>
+                </#if>
+                </@jp.contents>
+
+                    </ul>
+                    <i class="line" style="display: none; width: 82px; left: 1004px;"></i></nav>
+                <h1 class="logo l"><a href="http://www.sxzyjt.com/" class="hidetext" title="双欣集团">双欣集团</a></h1>
+                <a href="#menu" class="mobile_key"><i class="ion"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+
+
+<#nested>
+
+    <!--footer-->
+    <footer class="pageFooter">
+        <div class="foot_top">
+            <div class="wrap fix">
+                <div class="f_logo l">
+                    <a href="http://www.sxzyjt.com/"><img src="${CTPATH}/images/logo.gif" alt="双欣集团"></a>
+                </div>
+                <dl class="f_dl f_dl1 l">
+                    <dt>
+                        <a href="#">关于双欣</a>
+                    </dt>
+                    <dd>
+                        <a href="#">双欣简介</a>
+                        <a href="#">创始人</a>
+                        <a href="#">发展历程</a>
+                        <a href="#">企业荣誉</a>
+                        <a href="#">企业文化</a>
+                        <a href="#">联系我们</a>
+                    </dd>
+                </dl>
+                <dl class="f_dl f_dl2 l" style="margin-left: -60px;width: 19%;">
+                    <dt>
+                        <a href="#">联系我们</a>
+                    </dt>
+                    <dd>
+                        <a data-no-instant="" href="">地 址：中国·内蒙古鄂尔多斯市鄂托克旗棋盘井工业园区</a>
+                        <a data-no-instant="" href="">联系方式:0477-6471050</a>
+                        <a data-no-instant="" href="">邮 编：016064</a>
+                        <a data-no-instant="" href="">传 真：0477-6471328</a>
+                        <a data-no-instant="" href="">网 址：www.sxzyjt.com</a>
+                    </dd>
+                </dl>
+                <dl class="f_dl f_dl3 l">
+                    <dt>
+                        企业链接
+                    </dt>
+                    <dd>
+                        <div class="bd">
+                            <div class="tempWrap" style="overflow:hidden; position:relative; height:150px"><ul style="top: 0px; position: relative; padding: 0px; margin: 0px;">
+                                <li style="height: 25px;"><a href="http://www.shuangxinpva.com/" target="_blank">内蒙古双欣环保材料股份有限公司</a> </li>
+                                <li style="height: 25px;"><a href="http://www.shuangxinlng.com/" target="_blank">鄂尔多斯市宏基亿泰能源有限公司</a> </li>
+                                <li style="height: 25px;"><a href="http://www.shuangxinhxt.com/" target="_blank">内蒙古浦瑞芬环保科技有限责任公司</a> </li>
+                                <li style="height: 25px;"><a href="http://www.elyunwei.com/page1" target="_blank">二连浩特市运维商贸有限公司</a> </li>
+                                <li style="height: 25px;"><a href="#" target="_blank">二连浩特市运维商贸有限公司</a> </li>乌海市蒙港投资有限公司
+                                <li style="height: 25px;"><a href="#" target="_blank">内蒙古双欣矿业有限公司</a> </li>
+                                <li style="height: 25px;"><a href="#" target="_blank">润物（天津）国际贸易有限公司</a> </li>
+
+                            </ul></div>
+                        </div>
+                        <div class="hd">
+                            <a href="javascript:;" class="f_dl3_arr dl3_arr_prev"></a>
+                            <ul><li class="on">1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li></ul>
+                            <a href="javascript:;" class="f_dl3_arr dl3_arr_next"></a>
+                        </div>
+                    </dd>
+                </dl>
+
+                <dl class="f_dl4 r">
+                    <dt>
+                        互动专区
+                    </dt>
+                    <dd>
+                        <ul class="f_erwm fix">
+                            <li class="li1"><img src="${CTPATH}/images/t6.png" alt="双欣集团"><p>双欣集团</p></li>
+                            <li class="li2"></li>
+                            <li class="li3"></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <div class="wrap fix">
+                <div class="l">
+                    Copyright © 2017
+                    <a href="http://www.sxzyjt.com/">双欣集团</a> 版权所有
+                    <span class="_beian">备案号：[ <a href="http://www.miibeian.gov.cn/" target="_blank">蒙ICP备10001287号</a> ]</span>
+                </div>
+                <!--<div class="r">
+                    <a href="#">网站地图</a>
+                    <em>|</em>
+                    <a href="Y">法律声明</a>
+                </div>-->
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+    <a href="javascript:;" class="gotop" style="display: block;"></a>
+</section>
+
+<div id="boxBlank" ontouchmove="return false" onselectstart="return false"></div>
+</body>
+</html>
+    <script type="text/javascript">
+        seajs.use('js/index');
+    </script>
+</#macro>
