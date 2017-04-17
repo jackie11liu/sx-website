@@ -1,0 +1,300 @@
+<#include "_layout.html"/>
+<@layout>
+<style type="text/css">
+    .channelT {
+        background: url(${CTPATH}/images/channelT_bg.jpg) no-repeat center;
+        height: 100px;
+        color: #fff;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .channelT h2 {
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 80px;
+    }
+    .mainLeft {
+        width: 15%;
+        padding-top: 3%;
+    }
+    .subnavs {
+        padding: 15px 0;
+        background: #fff;
+        margin-bottom: 20px;
+    }
+    .subnavs>li.cur {
+        background: #976132;
+        color: #fff;
+    }
+    .subnavs>li>a {
+        display: block;
+        padding: 0 12px;
+        font-size: 14px;
+        line-height: 42px;
+        border-bottom: #dadadb solid 1px;
+    }
+    a {
+        color: inherit;
+        cursor: pointer;
+    }
+    .mainRight {
+        margin-top: 3%;
+        margin-left: 3%;
+        padding:2% ;
+        width: 76%;
+        background: #fff;
+        min-height: 500px;
+        float: left;
+    }
+    .newsSear, .media {
+        background: #fff;
+        padding: 20px;
+    }
+    .media ._t {
+        text-indent: 15px;
+        font-size: 18px;
+        border-bottom: #dadadb solid 1px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    .media p {
+        font-size: 14px;
+        text-indent: 15px;
+    }
+    /*ul, menu, dir {*/
+        /*display: block;*/
+        /*list-style-type: disc;*/
+        /*-webkit-margin-before: 1em;*/
+        /*-webkit-margin-after: 1em;*/
+        /*-webkit-margin-start: 0px;*/
+        /*-webkit-margin-end: 0px;*/
+        /*-webkit-padding-start: 40px;*/
+    /*}*/
+    /*ul {*/
+        /*padding-left: 0;*/
+        /*list-style-type: none;*/
+    /*}*/
+    .inewsSearch {
+        padding: 20px 7% 28px;
+        background-color: #fff;
+    }
+    .inewsSearch .sec_hd {
+        margin-bottom: 8px;
+    }
+    .inewsSearch .sec_bd .nselect {
+        margin-bottom: 15px;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .nselect .c_select {
+        display: block;
+        width: 100%;
+        background-color: #e5e5e5;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 0!important;
+    }
+    input[type="hidden" i], input[type="image" i], input[type="file" i] {
+        -webkit-appearance: initial;
+        background-color: initial;
+        padding: initial;
+        border: initial;
+    }
+    .nInput {
+        display: block;
+        height: 39px;
+        border: #ddd 1px solid;
+        padding: 0 20px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        background-color: #fff;
+    }
+    .nInput input {
+        width: 100%;
+        height: 19px;
+        line-height: 19px;
+        padding: 10px 0;
+        vertical-align: top;
+        border-width: 0;
+        font-family: "Microsoft Yahei";
+    }
+    input {
+        -webkit-appearance: textfield;
+        background-color: white;
+        -webkit-rtl-ordering: logical;
+        user-select: text;
+        cursor: auto;
+        padding: 1px;
+        border-width: 2px;
+        border-style: inset;
+        border-color: initial;
+        border-image: initial;
+    }
+    .subnavs>li.cur a {
+        border-bottom: none;
+        color: #fff;
+    }
+    .subnavs>li>a {
+        display: block;
+        padding: 0 12px;
+        font-size: 14px;
+        line-height: 42px;
+        border-bottom: #dadadb solid 1px;
+    }
+    .subnavs>li>a i {
+        float: right;
+        padding: 0;
+        margin: 0;
+    }
+    .nBtn {
+        overflow: hidden;
+    }
+    .nBtn a {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #a47c29;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    input, textarea, select, button {
+        text-rendering: auto;
+        color: initial;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        margin: 0em 0em 0em 0em;
+        font: 13.3333px Arial;
+    }
+
+    input, textarea, select, button, meter, progress {
+        -webkit-writing-mode: horizontal-tb;
+    }
+
+</style>
+    <section class="bodyMain">
+        <section class="n_banner pr home_banner">
+            <div class="pr oh bann_img">
+                <img src="${CTPATH}/images/52b9c0966a0d1.jpg" alt="产品展示" />
+            </div>
+            <h3 class="posi pa"></h3>
+        </section>
+        <section class="pageMain news_home">
+            <div class="part1">
+                <div class="wrap">
+                    <div class="mainLeft l">
+                        <div class="channelT">
+                            <h2>人才发展</h2>
+                        </div>
+                        <ul class="subnavs">
+                            <@jp.taxonomys module="employee">
+                            <#list taxonomys as taxonomy>
+                                <li> <a href="${taxonomy.url!}">${taxonomy.title!}<i class="ion"></i></a></li>
+                            </#list>
+                        </@jp.taxonomys>
+                        </ul>
+
+
+                        <div class="media">
+                            <h3 class="_t">媒体联络</h3>
+                            <p>内蒙古伊泰集团有限公司</p>
+                            <ul>
+                                <li><i class="ion">&#xe73d;</i>传真：0477-8565688</li>
+                                <li><i class="ion">&#xe626;</i>电话：0477-8565660</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="mainRight r">
+                        <div class="x-pull-left x-layout-73 blog-sm-left">
+                            <div class="x-white-box">
+                                <div class="x-details-content x-padding-top-10 x-padding-bottom-10 aritcle">
+                                    <table width="712" height="8" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td style="padding:30px; line-height:20px;" colspan="3">
+                                                <TABLE width="95%" border=0 align="right" cellPadding=0 cellSpacing=0>
+                                                    <tr>
+                                                        <td style="line-height:25px;">报名方式：符合要求的报考者，点击<a href="/UploadFile/应聘登记表.doc" style="color:#FF0000">下载《应聘登记表》</a>，填写个人信息、粘贴个人照片，将电子表会同本人身份证、学历及相关证明文件扫描件等压缩包发送至邮箱：sxhr@shuangxingroup.com。</td>
+                                                    </tr>
+
+                                                    <TR>
+                                                        <TD height=1><br>
+                                                            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#FFFFFF" >
+                                                                <tr bgcolor="#DFDFDF">
+                                                                    <td width="82" height="22" align="center" bgcolor="#eeeeee" >职位名称：</td>
+                                                                    <td colspan="2" bgcolor="#eeeeee" >&nbsp;法律事务员 </td>
+                                                                    <td width="181" bgcolor="#eeeeee" >&nbsp;<!--<a href="AcceptJob.asp?id="><font color="#FF0000">应聘此岗位</font></a>--></td>
+                                                                </tr>
+                                                                <tr bgcolor="#DFDFDF">
+                                                                    <td width="82" height="22" align="center" bgcolor="#eeeeee" >工作地点：</td>
+                                                                    <td colspan="3" valign="top" bgcolor="#eeeeee" >&nbsp;鄂尔多斯市鄂托克旗棋盘井工业园区 </td>
+                                                                </tr>
+                                                                <tr bgcolor="#DFDFDF">
+                                                                    <td width="82" height="22" align="center" bgcolor="#eeeeee" >工资待遇：</td>
+                                                                    <td width="204" bgcolor="#eeeeee">面议</td>
+                                                                    <td width="78" align="center" bgcolor="#eeeeee" >发布日期：</td>
+                                                                    <td bgcolor="#eeeeee" >&nbsp;2015-12-1 8:36:28</td>
+                                                                </tr>
+                                                                <tr bgcolor="#DFDFDF">
+                                                                    <td width="82" height="26" align="center" bgcolor="#eeeeee">需求人数：</td>
+                                                                    <td bgcolor="#eeeeee">&nbsp;1人</td>
+                                                                    <td align="center" bgcolor="#eeeeee">有效期限：</td>
+                                                                    <td bgcolor="#eeeeee">&nbsp;1个月</td>
+                                                                </tr>
+                                                                <tr bgcolor="#DFDFDF">
+                                                                    <td width="82" height="26" align="center" bgcolor="#eeeeee" ><font color="#000066">具体要求：</font></td>
+                                                                    <td colspan="3" align="center" bgcolor="#eeeeee"><table width="100%"  border="0" cellpadding="5" cellspacing="0" >
+                                                                        <tr>
+                                                                            <td class="News-05">1、年龄在35周岁以下，全日制本科以上学历，男性，法学专业。其中从事三年以上法务工作经验者，学历可放宽至全日制大专。<br>
+                                                                                2、具有法律诉讼工作经验，熟知司法程序，能够独立处理公司的法律纠纷和事务。
+                                                                                <br>3、认同双欣文化，责任心强，稳定性强，能适应工业园区的工作生活。
+                                                                                <br>4、鄂尔多斯市、乌海市户籍或有周边地区工作经者，优先考虑。<br>
+                                                                                5、有国家统一司法考试C证的，优先考虑。<br>联系人：陈先生<br>
+                                                                                电话：0477-6471334-8060
+                                                                                <br>
+                                                                                邮箱地址：sxhr@shuangxingroup.com</td>
+                                                                        </tr>
+                                                                    </table></td>
+                                                                </tr>
+                                                                <tr bgcolor="#F7F7F7">
+                                                                    <td height="10" colspan="4"><img src="Image/Hrbackup.gif" width="96" height="10" /></td>
+                                                                </tr>
+                                                            </table></TD>
+                                                    </TR>
+
+
+
+                                                    <!--------------------------------------------------------->
+
+                                                </TABLE>
+                                            </td></tr>
+                                        <tr>
+                                            <td width="10" height="8" background="image/a9.gif"></td>
+                                            <td width="692"></td>
+                                            <td width="10" background="image/a10.gif"></td>
+                                        </tr>
+                                    </table></td>
+                                    </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+</@layout>

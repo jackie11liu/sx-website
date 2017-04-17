@@ -1,0 +1,347 @@
+<#include "_layout.html"/>
+<@layout>
+<style type="text/css">
+    .channelT {
+        background: url(${CTPATH}/images/channelT_bg.jpg) no-repeat center;
+        height: 100px;
+        color: #fff;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .channelT h2 {
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 80px;
+    }
+    .mainLeft {
+        width: 15%;
+        padding-top: 3%;
+    }
+    .subnavs {
+        padding: 15px 0;
+        background: #fff;
+        margin-bottom: 20px;
+    }
+    .subnavs>li.cur {
+        background: #976132;
+        color: #fff;
+    }
+    .subnavs>li>a {
+        display: block;
+        padding: 0 12px;
+        font-size: 14px;
+        line-height: 42px;
+        border-bottom: #dadadb solid 1px;
+    }
+    a {
+        color: inherit;
+        cursor: pointer;
+    }
+    .mainRight {
+        margin-top: 3%;
+        margin-left: 3%;
+        padding:2% ;
+        width: 76%;
+        background: #fff;
+        min-height: 500px;
+        float: left;
+    }
+    .newsSear, .media {
+        background: #fff;
+        padding: 20px;
+    }
+    .media ._t {
+        text-indent: 15px;
+        font-size: 18px;
+        border-bottom: #dadadb solid 1px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    .media p {
+        font-size: 14px;
+        text-indent: 15px;
+    }
+    /*ul, menu, dir {*/
+        /*display: block;*/
+        /*list-style-type: disc;*/
+        /*-webkit-margin-before: 1em;*/
+        /*-webkit-margin-after: 1em;*/
+        /*-webkit-margin-start: 0px;*/
+        /*-webkit-margin-end: 0px;*/
+        /*-webkit-padding-start: 40px;*/
+    /*}*/
+    /*ul {*/
+        /*padding-left: 0;*/
+        /*list-style-type: none;*/
+    /*}*/
+    .inewsSearch {
+        padding: 20px 7% 28px;
+        background-color: #fff;
+    }
+    .inewsSearch .sec_hd {
+        margin-bottom: 8px;
+    }
+    .inewsSearch .sec_bd .nselect {
+        margin-bottom: 15px;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .nselect .c_select {
+        display: block;
+        width: 100%;
+        background-color: #e5e5e5;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 0!important;
+    }
+    input[type="hidden" i], input[type="image" i], input[type="file" i] {
+        -webkit-appearance: initial;
+        background-color: initial;
+        padding: initial;
+        border: initial;
+    }
+    .nInput {
+        display: block;
+        height: 39px;
+        border: #ddd 1px solid;
+        padding: 0 20px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        background-color: #fff;
+    }
+    .nInput input {
+        width: 100%;
+        height: 19px;
+        line-height: 19px;
+        padding: 10px 0;
+        vertical-align: top;
+        border-width: 0;
+        font-family: "Microsoft Yahei";
+    }
+    input {
+        -webkit-appearance: textfield;
+        background-color: white;
+        -webkit-rtl-ordering: logical;
+        user-select: text;
+        cursor: auto;
+        padding: 1px;
+        border-width: 2px;
+        border-style: inset;
+        border-color: initial;
+        border-image: initial;
+    }
+    .subnavs>li.cur a {
+        border-bottom: none;
+        color: #fff;
+    }
+    .subnavs>li>a {
+        display: block;
+        padding: 0 12px;
+        font-size: 14px;
+        line-height: 42px;
+        border-bottom: #dadadb solid 1px;
+    }
+    .subnavs>li>a i {
+        float: right;
+        padding: 0;
+        margin: 0;
+    }
+    .nBtn {
+        overflow: hidden;
+    }
+    .nBtn a {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #a47c29;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    input, textarea, select, button {
+        text-rendering: auto;
+        color: initial;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        margin: 0em 0em 0em 0em;
+        font: 13.3333px Arial;
+    }
+
+    input, textarea, select, button, meter, progress {
+        -webkit-writing-mode: horizontal-tb;
+    }
+
+</style>
+<section class="bodyMain">
+    <section class="n_banner pr home_banner">
+        <div class="pr oh bann_img">
+            <img src="${CTPATH}/images/740bb91f9f33832fbd1e0566f96992b6.jpg" alt="产品展示" />
+        </div>
+        <h3 class="posi pa"></h3>
+    </section>
+    <section class="pageMain news_home">
+        <div class="part1">
+            <div class="wrap">
+                <div class="mainLeft l">
+                    <div class="channelT">
+                        <h2>产品展示</h2>
+                    </div>
+                    <ul class="subnavs">
+                        <@jp.contents module="goods">
+                        <#list contents as content>
+                            <li><a href="${content.url}">${content.title}<i class="ion"></i></a></li>
+                        </#list>
+                    </@jp.contents>
+                    </ul>
+
+
+                    <div class="media">
+                        <h3 class="_t">媒体联络</h3>
+                        <p>内蒙古伊泰集团有限公司</p>
+                        <ul>
+                            <li><i class="ion">&#xe73d;</i>传真：0477-8565688</li>
+                            <li><i class="ion">&#xe626;</i>电话：0477-8565660</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="mainRight r">
+                    <table width="712" height="8" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tr>
+                            <td height="300" colspan="3" valign="top" style="padding-top:20px;" align="center">
+                                <table border="0" cellspacing="0" cellpadding="0" align="center">
+                                    <tr>
+                                        <td width="214"></td>
+                                        <td width="214"></td>
+                                        <td width="214"></td>
+                                        <td width="214"></td>
+                                    </tr>
+
+                                    <tr>
+
+                                        <td align="center"><table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" height="140" background="image/p1.jpg" width="200"><a href="?id=1081"><img src="${CTPATH}/images/s_m.jpg" width="180" height="120" border="0" align="absmiddle" /></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20" style="padding:5px 0px 10px 10px;">名称：<a href=?id=1081><span >煤泥</span></a></td>
+                                            </tr>
+                                        </table></td>
+
+                                        <td align="center"><table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" height="140" background="image/p1.jpg" width="200"><a href="?id=1082"><img src="${CTPATH}/images/s_jm.jpg" width="180" height="120" border="0" align="absmiddle" /></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20" style="padding:5px 0px 10px 10px;">名称：<a href=?id=1082><span >精煤</span></a></td>
+                                            </tr>
+                                        </table></td>
+
+                                        <td align="center"><table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" height="140" background="image/p1.jpg" width="200"><a href="?id=1083"><img src="${CTPATH}/images/s_zm.jpg" width="180" height="120" border="0" align="absmiddle" /></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20" style="padding:5px 0px 10px 10px;">名称：<a href=?id=1083><span >中煤</span></a></td>
+                                            </tr>
+                                        </table></td>
+                                        <td align="center"><table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" height="140" background="image/p1.jpg" width="200"><a href="?id=1084"><img src="${CTPATH}/images/s_ym.jpg" width="180" height="120" border="0" align="absmiddle" /></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20" style="padding:5px 0px 10px 10px;">名称：<a href=?id=1084><span >原煤</span></a></td>
+                                            </tr>
+                                        </table></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td align="center"><table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" height="140" background="image/p1.jpg" width="200"><a href="?id=1128"><img src="${CTPATH}/images/s_jy.jpg" width="180" height="120" border="0" align="absmiddle" /></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20" style="padding:5px 0px 10px 10px;">名称：<a href=?id=1128><span >聚乙烯醇</span></a></td>
+                                            </tr>
+                                        </table></td>
+
+                                        <td align="center"><table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" height="140" background="image/p1.jpg" width="200"><a href="?id=1798"><img src="${CTPATH}/images/s_gq.jpg" width="180" style="height: 130px;padding-top: 20px;" border="0" align="absmiddle" /></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20" style="padding:5px 0px 10px 10px;">名称：<a href=?id=1798><span >高强高模聚乙烯醇纤维</span></a></td>
+                                            </tr>
+                                        </table></td>
+                                        <td align="center"><table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" height="140" background="image/p1.jpg" width="200"><a href="?id=1949"><img src="${CTPATH}/images/s_dk.jpg" width="180" height="120" border="0" align="absmiddle" /></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20" style="padding:5px 0px 10px 10px;">名称：<a href=?id=1949><span >大颗粒活性炭</span></a></td>
+                                            </tr>
+                                        </table></td>
+                                        <td align="center"><table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" height="140" background="image/p1.jpg" width="200"><a href="?id=1950"><img src="${CTPATH}/images/s_xk.jpg" width="180" height="120" border="0" align="absmiddle" /></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20" style="padding:5px 0px 10px 10px;">名称：<a href=?id=1950><span >小颗粒活性炭</span></a></td>
+                                            </tr>
+                                        </table></td>
+                                    </tr>
+
+                                    <tr>
+
+
+
+
+
+                                        <td align="center"><table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" height="140" background="image/p1.jpg" width="200"><a href="?id=1951"><img src="${CTPATH}/images/s_yp.jpg" width="180" height="120" border="0" align="absmiddle" /></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20" style="padding:5px 0px 10px 10px;">名称：<a href=?id=1951><span >压片活性炭</span></a></td>
+                                            </tr>
+                                        </table></td>
+                                        <td align="center"><table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" height="140" background="image/p1.jpg" width="200"><a href="?id=1952"><img src="${CTPATH}/images/s_fm.jpg" width="180" height="120" border="0" align="absmiddle" /></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20" style="padding:5px 0px 10px 10px;">名称：<a href=?id=1952><span >粉末活性炭</span></a></td>
+                                            </tr>
+                                        </table>
+                                        </td><td></td><td></td>
+                                    </tr>
+
+                                    <tr>
+
+
+
+                                    </tr>
+
+                                    <!--------------------------------------------------------->
+
+                                </table></td></tr></table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</section>
+</@layout>
