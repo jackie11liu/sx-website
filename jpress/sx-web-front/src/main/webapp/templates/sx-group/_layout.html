@@ -45,10 +45,10 @@
         <div class="head_top">
             <div class="wrap">
                 <ul class="head_r fix">
-                    <li class="li02"><a href="###" class="val">${i18n.get("sx_group")}<i class="ions"></i></a>
+                    <li class="li02"><a href="###" class="val">${i18n.get("sx_group")!}<i class="ions"></i></a>
                         <div class="option" style="display: none;" id="websites">
-                            <a href="http://www.shuangxinpva.com/" target="_blank">${i18n.get("environment-friendly_material")}</a>
-                            <a href="http://www.shuangxinlng.com/" target="_blank">${i18n.get("hongjiyitai")}</a>
+                            <a href="http://www.shuangxinpva.com/" target="_blank">${i18n.get("environment-friendly_material")!}</a>
+                            <a href="http://www.shuangxinlng.com/" target="_blank">${i18n.get("hongjiyitai")!}</a>
                         </div>
 
                     </li>
@@ -58,7 +58,7 @@
         <div class="head_bottom">
             <div class="wrap fix">
                 <div class="head_ser r active">
-                    <a href="http://192.168.10.104:8080/sx-group?_locale=zh_CN" class="_val">${i18n.get("language_zh")}</a>
+                    <a href="http://192.168.10.104:8080/sx-group?_locale=zh_CN" class="_val">${i18n.get("language_zh")!}</a>
                 </div>
                 <div class="head_lang r pr">
                     <a href="http://192.168.10.104:8080/sx-group?_locale=en_US" class="_val">EN</a>
@@ -69,14 +69,15 @@
                 <#if contents?exists>
                     <#list contents as menuNav>
                         <#if !(menuNav.parent_id ??)>
-                            <li class="nav_li nav${menuNav_index?if_exists+1}"><a href="${menuNav.text!}" target="" class="nav_a">${menuNav.title!}</a>
+                            <li class="nav_li nav${menuNav_index?if_exists+1}">
+                                <a href="${menuNav.text!}" target="" class="nav_a">${i18n.get("${menuNav.title}")!"${menuNav.title}"}</a>
                                 <div class="setNav pa" style="display: none; height: 280px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
                                     <div class="wrap oh pr">
                                         <div class="setCon l">
-                                            <h3 class="tit">${menuNav.title!}</h3>
+                                            <h3 class="tit"></h3>
                                             <div class="p">
                                                 <p>
-                                                    ${i18n.get("ceo_talk")}
+                                                    ${i18n.get("${menuNav.flag}")!}
                                                 </p>
                                                 <p><br></p>
                                             </div>
@@ -84,7 +85,7 @@
                                         <ul class="setMenu l c">
                                             <#list contents as menu2>
                                                 <#if menu2.parent_id?exists && menu2.parent_id == menuNav.id>
-                                                    <li class="nav${menu2_index?if_exists+7}"><a href="${menu2.text!}" target="">${menu2.title!}</a> </li>
+                                                    <li class="nav${menu2_index?if_exists+7}"><a href="${menu2.text!}" target="">${i18n.get("${menu2.title}")!"${menu2.title}"}</a> </li>
                                                 </#if>
                                             </#list>
                                         </ul>
@@ -100,7 +101,7 @@
 
                     </ul>
                     <i class="line" style="display: none; width: 82px; left: 1004px;"></i></nav>
-                <h1 class="logo l"><a href="http://www.sxzyjt.com/" class="hidetext" title="双欣集团">双欣集团</a></h1>
+                <h1 class="logo l"><a href="http://www.sxzyjt.com/" class="hidetext" title=${i18n.get("sx_name")!}>${i18n.get("sx_name")!}</a></h1>
                 <a href="#menu" class="mobile_key"><i class="ion"></i></a>
             </div>
         </div>
@@ -115,7 +116,7 @@
         <div class="foot_top">
             <div class="wrap fix">
                 <div class="f_logo l">
-                    <a href="http://www.sxzyjt.com/"><img src="${CTPATH}/images/logo.gif" alt="双欣集团"></a>
+                    <a href="http://www.sxzyjt.com/"><img src="${CTPATH}/images/logo_footer.gif" alt=${i18n.get("sx_name")!}></a>
                 </div>
                 <dl class="f_dl f_dl1 l">
                     <dt>
@@ -153,8 +154,9 @@
                                 <li style="height: 25px;"><a href="http://www.shuangxinlng.com/" target="_blank">鄂尔多斯市宏基亿泰能源有限公司</a> </li>
                                 <li style="height: 25px;"><a href="http://www.shuangxinhxt.com/" target="_blank">内蒙古浦瑞芬环保科技有限责任公司</a> </li>
                                 <li style="height: 25px;"><a href="http://www.elyunwei.com/page1" target="_blank">二连浩特市运维商贸有限公司</a> </li>
-                                <li style="height: 25px;"><a href="#" target="_blank">二连浩特市运维商贸有限公司</a> </li>乌海市蒙港投资有限公司
+                                <li style="height: 25px;"><a href="#" target="_blank">二连浩特市运维商贸有限公司</a> </li>
                                 <li style="height: 25px;"><a href="#" target="_blank">内蒙古双欣矿业有限公司</a> </li>
+                                <li style="height: 25px;"><a href="#" target="_blank">乌海市蒙港投资有限公司</a> </li>
                                 <li style="height: 25px;"><a href="#" target="_blank">润物（天津）国际贸易有限公司</a> </li>
 
                             </ul></div>
@@ -173,7 +175,7 @@
                     </dt>
                     <dd>
                         <ul class="f_erwm fix">
-                            <li class="li1"><img src="${CTPATH}/images/t6.png" alt="双欣集团"><p>双欣集团</p></li>
+                            <li class="li1"><img src="${CTPATH}/images/t6.png" alt=${i18n.get("sx_name")!}><p>${i18n.get("sx_name")!}</p></li>
                             <li class="li2"></li>
                             <li class="li3"></li>
                         </ul>
@@ -185,7 +187,7 @@
             <div class="wrap fix">
                 <div class="l">
                     Copyright © 2017
-                    <a href="http://www.sxzyjt.com/">双欣集团</a> 版权所有
+                    <a href="http://www.sxzyjt.com/">${i18n.get("sx_name")!}</a> 版权所有
                     <span class="_beian">备案号：[ <a href="http://www.miibeian.gov.cn/" target="_blank">蒙ICP备10001287号</a> ]</span>
                 </div>
                 <!--<div class="r">

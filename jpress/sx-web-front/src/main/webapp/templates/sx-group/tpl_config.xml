@@ -21,15 +21,11 @@
 		<taxonomy title="新闻分类" name="category" formType="select" />
 		<taxonomy title="标签" name="tag" formType="input" />
 	</module>
-	<module title="实力双欣" name="strength" list="成员企业" add="编辑子公司信息" comment="评论">
-		<taxonomy title="子公司分类" name="category" formType="select" />
-		<taxonomy title="标签" name="tag" formType="input" />
-	</module>
 	<module title="产品展示" name="product" list="所有产品" add="编辑产品信息" comment="评论">
 		<taxonomy title="产品分类" name="category" formType="select" />
 		<taxonomy title="标签" name="tag" formType="input" />
 	</module>
-	<module title="人才发展" name="job" list="所有招聘" add="撰写招聘信息" comment="评论">
+	<module title="加入我们" name="join" list="所有招聘" add="撰写招聘信息" comment="评论">
 		<taxonomy title="招聘分类" name="category" formType="select" />
 		<taxonomy title="标签" name="tag" formType="input" />
 	</module>
