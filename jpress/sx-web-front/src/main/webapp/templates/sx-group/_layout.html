@@ -77,7 +77,11 @@
                                             <h3 class="tit"></h3>
                                             <div class="p">
                                                 <p>
-                                                    ${i18n.get("${menuNav.flag}")!}
+                                                    <#if menuNav.flag?exists>
+                                                        ${i18n.get("${menuNav.flag}")}
+                                                    <#else>
+                                                        ${menuNav.text}
+                                                    </#if>
                                                 </p>
                                                 <p><br></p>
                                             </div>
