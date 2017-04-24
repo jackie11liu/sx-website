@@ -152,7 +152,7 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<dependency>
+		<!--<dependency>
 			<groupId>io.jpress</groupId>
 			<artifactId>jpress-web-template-the3</artifactId>
 			<version>1.0</version>
@@ -166,7 +166,8 @@
 			<version>1.0</version>
 			<type>war</type>
 			<scope>compile</scope>
-		</dependency>
+		</dependency>-->
+
 
 	</dependencies>
 
@@ -213,14 +214,14 @@
 							<groupId>io.jpress</groupId>
 							<artifactId>jpress-web-core</artifactId>
 						</overlay>
-						<overlay>
+						<!--<overlay>
 							<groupId>io.jpress</groupId>
 							<artifactId>jpress-web-template-jblog</artifactId>
 						</overlay>
 						<overlay>
 							<groupId>io.jpress</groupId>
 							<artifactId>jpress-web-template-the3</artifactId>
-						</overlay>
+						</overlay>-->
 					</overlays>
 				</configuration>
 			</plugin>

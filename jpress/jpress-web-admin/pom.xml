@@ -134,21 +134,22 @@
 			<scope>compile</scope>
 		</dependency>
 
+		<!--<dependency>
+			<groupId>io.jpress</groupId>
+			<artifactId>jpress-web-template-sx</artifactId>
+			<version>1.0</version>
+			<type>war</type>
+			<scope>compile</scope>
+		</dependency>-->
+
 		<dependency>
 			<groupId>io.jpress</groupId>
-			<artifactId>jpress-web-template-the3</artifactId>
+			<artifactId>sx-web-front</artifactId>
 			<version>1.0</version>
 			<type>war</type>
 			<scope>compile</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>io.jpress</groupId>
-			<artifactId>jpress-web-template-jblog</artifactId>
-			<version>1.0</version>
-			<type>war</type>
-			<scope>compile</scope>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -206,13 +207,21 @@
 							<groupId>io.jpress</groupId>
 							<artifactId>jpress-web-core</artifactId>
 						</overlay>
-						<overlay>
+						<!--<overlay>
 							<groupId>io.jpress</groupId>
 							<artifactId>jpress-web-template-jblog</artifactId>
 						</overlay>
 						<overlay>
 							<groupId>io.jpress</groupId>
 							<artifactId>jpress-web-template-the3</artifactId>
+						</overlay>-->
+						<!--<overlay>
+							<groupId>io.jpress</groupId>
+							<artifactId>jpress-web-template-sx</artifactId>
+						</overlay>-->
+						<overlay>
+							<groupId>io.jpress</groupId>
+							<artifactId>sx-web-front</artifactId>
 						</overlay>
 					</overlays>
 				</configuration>

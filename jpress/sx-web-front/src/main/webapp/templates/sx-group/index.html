@@ -843,14 +843,13 @@
             <div class="_topnewslist">
                 <ul class="row">
 
-                    <@jp.indexPage module="article">
-                    <#list page.getList() as content>
 
-                        <li><a href="${(content.url)!}"><time class="date_time">${content.created?string('yyyy/MM/dd')!}</time><div class="_t">
-                            ${(content.title)!}
-                        </div></a></li>
-                    </#list>
-                </@jp.indexPage>
+
+                <@jp.contents module="news" count="6" orderBy="id" hasThumbnail="false" typeId = "2">
+                <#list contents as content>
+                    <li><a href="${content.url}">${content.title}</a></li>
+                </#list>
+            </@jp.contents>
                 </ul>
             </div>
             <a href="#">${i18n.get("more")!} &gt;</a>
@@ -860,15 +859,12 @@
             <div class="_topnewslist">
                 <ul class="row">
 
-                    <@jp.indexPage module="hangye">
-                    <#list page.getList() as content>
 
-                        <li><a href="${(content.url)!}"><time class="date_time">${content.created?string('yyyy/MM/dd')!}</time><div class="_t">
-                            ${(content.title)!}
-                        </div></a></li>
-
-                    </#list>
-                </@jp.indexPage>
+                <@jp.contents module="news" count="6" orderBy="id" hasThumbnail="false" typeId = "3">
+                <#list contents as content>
+                    <li><a href="${content.url}">${content.title}</a></li>
+                </#list>
+            </@jp.contents>
                 </ul>
             </div>
             <a href="#">${i18n.get("more")!} &gt;</a>

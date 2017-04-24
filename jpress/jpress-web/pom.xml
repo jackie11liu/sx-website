@@ -44,28 +44,21 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<!--<dependency>
-			<groupId>io.jpress</groupId>
-			<artifactId>jpress-web-template-jblog</artifactId>
-			<version>1.0</version>
-			<type>war</type>
-			<scope>compile</scope>
-		</dependency>-->
 
-		<dependency>
+		<!--<dependency>
 			<groupId>io.jpress</groupId>
 			<artifactId>jpress-web-template-sx</artifactId>
 			<version>1.0</version>
 			<type>war</type>
 			<scope>compile</scope>
-		</dependency>
-		<!--<dependency>
+		</dependency>-->
+		<dependency>
 			<groupId>io.jpress</groupId>
-			<artifactId>jpress-web-template-the3</artifactId>
+			<artifactId>sx-web-front</artifactId>
 			<version>1.0</version>
 			<type>war</type>
 			<scope>compile</scope>
-		</dependency>-->
+		</dependency>
 
 	</dependencies>
 
@@ -116,15 +109,11 @@
 						</overlay>
 						<!--<overlay>
 							<groupId>io.jpress</groupId>
-							<artifactId>jpress-web-template-jblog</artifactId>
-						</overlay>-->
-						<!--<overlay>
-							<groupId>io.jpress</groupId>
-							<artifactId>jpress-web-template-the3</artifactId>
+							<artifactId>jpress-web-template-sx</artifactId>
 						</overlay>-->
 						<overlay>
 							<groupId>io.jpress</groupId>
-							<artifactId>jpress-web-template-sx</artifactId>
+							<artifactId>sx-web-front</artifactId>
 						</overlay>
 					</overlays>
 				</configuration>
