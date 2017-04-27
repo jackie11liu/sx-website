@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
 	<infos>
-		<title>sx-group</title>
-		<id>双欣集团测试版</id>
+		<title>双欣集团测试版</title>
+		<id>sx-template</id>
 		<description>双欣集团模版</description>
 		<author>jackie</author>
 		<authorWebsite>http://www.sxzyjt.com</authorWebsite>
@@ -28,6 +28,8 @@
 	<module title="加入我们" name="join" list="所有招聘" add="撰写招聘信息" comment="评论">
 		<taxonomy title="招聘分类" name="category" formType="select" />
 		<taxonomy title="标签" name="tag" formType="input" />
+	</module>
+	<module title="页面" name="page" list="所有页面" add="新建页面" comment="评论">
 	</module>
 
 	<thumbnail name="t1" size="780 x 240" />

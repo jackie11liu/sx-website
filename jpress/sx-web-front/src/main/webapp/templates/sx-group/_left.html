@@ -13,7 +13,7 @@
         <@jp.taxonomys module="news">
         <#list taxonomys as taxonomy>
             <#if "/sx-group/news-news-1.html" != taxonomy.url!>
-                <li> <a href="${taxonomy.url!}">${taxonomy.title!}<i class="ion"></i></a></li>
+                <li <#if REQUEST.requestURI ? contains(taxonomy.url)> class="cur" </#if>> <a href="${taxonomy.url!}">${taxonomy.title!}<i class="ion"></i></a></li>
             </#if>
         </#list>
     </@jp.taxonomys>
@@ -22,7 +22,7 @@
 
     <div class="media">
         <h3 class="_t">媒体联络</h3>
-        <p>内蒙古伊泰集团有限公司</p>
+        <p>内蒙古双欣集团有限公司</p>
         <ul>
             <li><i class="ion">&#xe73d;</i>传真：0477-8565688</li>
             <li><i class="ion">&#xe626;</i>电话：0477-8565660</li>

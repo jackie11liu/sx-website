@@ -47,8 +47,23 @@ public class AdminInterceptor implements Interceptor {
 
 		User user = InterUtils.tryToGetUser(inv);
 		
-		if (user != null && user.isAdministrator()) {
-			controller.setAttr("_menu_html", MenuManager.me().generateHtml());
+		if (user != null /*&& user.isAdministrator()*/) {
+			String menuHtml = MenuManager.me().generateHtml();
+			if(user.isAdministrator()){
+				controller.setAttr("_menu_html", menuHtml);
+			}else{
+				String role = user.getRole();
+				String startStr = "<li class=\"treeview\" id=\"" + role + "\">";
+				int start = menuHtml.indexOf(startStr);
+				if(start != -1){
+					String tempHtml = menuHtml.substring(start);
+					int end = tempHtml.indexOf("</li></ul></li>");
+					controller.setAttr("_menu_html", tempHtml.substring(0,end));
+				}else{
+					controller.setAttr("_menu_html", menuHtml);
+				}
+			}
+
 			inv.invoke();
 			return;
 		}

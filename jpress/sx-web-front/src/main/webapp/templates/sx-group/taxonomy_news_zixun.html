@@ -190,7 +190,7 @@
 		<div class="pr oh bann_img">
 			<img src="${CTPATH}/images/16pic_1711917_b.jpg" alt="新闻中心" />
 		</div>
-		<h3 class="posi pa"></h3>
+		<h3 class="posi pa"> <a href="/">首页</a><span>&nbsp;&gt;&nbsp;</span> <a href="/about/index.htm">关于双欣</a><span>&nbsp;&gt;&nbsp;</span> 双欣简介 </h3>
 	</section>
 	<!--main-->
 	<section class="pageMain news_home">
@@ -212,14 +212,13 @@
 									<div class="_topnewslist">
 										<ul class="row" style="width: 160%;">
 
-											<@jp.contents module="hangye">
-											<#list contents as content>
+											<@jp.contentPage>
+											<#list page.getList() as content>
 												<li style="width:100%;"><a href="${(content.url)!}"><time class="date_time">${content.created?string('yyyy/MM/dd')!}</time><div class="_t">
 													${(content.title)!}
 												</div></a></li>
-
 											</#list>
-										</@jp.contents>
+										</@jp.contentPage >
 										</ul>
 									</div>
 								</div>

@@ -48,10 +48,8 @@ public class _AdminController extends JBaseController {
 
 	@Before(ActionCacheClearInterceptor.class)
 	public void index() {
-		System.out.println("进入了index方法");
 		List<TplModule> moduleList = TemplateManager.me().currentTemplateModules();
 		setAttr("modules", moduleList);
-		System.out.println("模块数量"+moduleList.size());
 
 		if (moduleList != null && moduleList.size() > 0) {
 			String moduels[] = new String[moduleList.size()];
@@ -68,7 +66,6 @@ public class _AdminController extends JBaseController {
 		if (commentPage != null) {
 			setAttr("comments", commentPage.getList());
 		}
-		System.out.println("评论对象：render到index视图");
 
 		render("index.html");
 	}
@@ -77,17 +74,14 @@ public class _AdminController extends JBaseController {
 	public void login() {
 		String username = getPara("username");
 		String password = getPara("password");
-		System.out.println("进入登录，参数"+username+":"+password);
 
 		if (!StringUtils.areNotEmpty(username, password)) {
 			render("login.html");
 			return;
 		}
-		System.out.println("判断是否为空串");
 
 		User user = UserQuery.me().findUserByUsername(username);
 
-		System.out.println("查询用户");
 		if (null == user) {
 			renderAjaxResultForError("没有该用户");
 			return;
@@ -96,10 +90,8 @@ public class _AdminController extends JBaseController {
 		if (EncryptUtils.verlifyUser(user.getPassword(), user.getSalt(), password) /*&& user.isAdministrator()*/) {
 
 			MessageKit.sendMessage(Actions.USER_LOGINED, user);
-			System.out.println("发送了MessageKit.sendMessage");
 
 			CookieUtils.put(this, Consts.COOKIE_LOGINED_USER, user.getId().toString());
-			System.out.println("设置CookieUtils.put");
 
 			renderAjaxResultForSuccess("登录成功");
 		} else {

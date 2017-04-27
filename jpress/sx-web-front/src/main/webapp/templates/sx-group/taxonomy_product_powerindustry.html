@@ -1,0 +1,401 @@
+<#include "_layout.html"/>
+<@layout>
+<style type="text/css">
+    .channelT {
+        background: url(${CTPATH}/images/channelT_bg.jpg) no-repeat center;
+        height: 100px;
+        color: #fff;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .channelT h2 {
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 80px;
+    }
+    .mainLeft {
+        width: 15%;
+        padding-top: 3%;
+    }
+    .subnavs {
+        padding: 15px 0;
+        background: #fff;
+        margin-bottom: 20px;
+    }
+    .subnavs>li.cur {
+        background: #976132;
+        color: #fff;
+    }
+    .subnavs>li>a {
+        display: block;
+        padding: 0 12px;
+        font-size: 14px;
+        line-height: 42px;
+        border-bottom: #dadadb solid 1px;
+    }
+    a {
+        color: inherit;
+        cursor: pointer;
+    }
+    .mainRight {
+        margin-top: 3%;
+        margin-left: 3%;
+        padding:2% ;
+        width: 76%;
+        background: #fff;
+        min-height: 500px;
+        float: left;
+    }
+    .newsSear, .media {
+        background: #fff;
+        padding: 20px;
+    }
+    .media ._t {
+        text-indent: 15px;
+        font-size: 18px;
+        border-bottom: #dadadb solid 1px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    .media p {
+        font-size: 14px;
+        text-indent: 15px;
+    }
+    /*ul, menu, dir {*/
+    /*display: block;*/
+    /*list-style-type: disc;*/
+    /*-webkit-margin-before: 1em;*/
+    /*-webkit-margin-after: 1em;*/
+    /*-webkit-margin-start: 0px;*/
+    /*-webkit-margin-end: 0px;*/
+    /*-webkit-padding-start: 40px;*/
+    /*}*/
+    /*ul {*/
+    /*padding-left: 0;*/
+    /*list-style-type: none;*/
+    /*}*/
+    .inewsSearch {
+        padding: 20px 7% 28px;
+        background-color: #fff;
+    }
+    .inewsSearch .sec_hd {
+        margin-bottom: 8px;
+    }
+    .inewsSearch .sec_bd .nselect {
+        margin-bottom: 15px;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .nselect .c_select {
+        display: block;
+        width: 100%;
+        background-color: #e5e5e5;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 0!important;
+    }
+    input[type="hidden" i], input[type="image" i], input[type="file" i] {
+        -webkit-appearance: initial;
+        background-color: initial;
+        padding: initial;
+        border: initial;
+    }
+    .nInput {
+        display: block;
+        height: 39px;
+        border: #ddd 1px solid;
+        padding: 0 20px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        background-color: #fff;
+    }
+    .nInput input {
+        width: 100%;
+        height: 19px;
+        line-height: 19px;
+        padding: 10px 0;
+        vertical-align: top;
+        border-width: 0;
+        font-family: "Microsoft Yahei";
+    }
+    input {
+        -webkit-appearance: textfield;
+        background-color: white;
+        -webkit-rtl-ordering: logical;
+        user-select: text;
+        cursor: auto;
+        padding: 1px;
+        border-width: 2px;
+        border-style: inset;
+        border-color: initial;
+        border-image: initial;
+    }
+    .subnavs>li.cur a {
+        border-bottom: none;
+        color: #fff;
+    }
+    .subnavs>li>a {
+        display: block;
+        padding: 0 12px;
+        font-size: 14px;
+        line-height: 42px;
+        border-bottom: #dadadb solid 1px;
+    }
+    .subnavs>li>a i {
+        float: right;
+        padding: 0;
+        margin: 0;
+    }
+    .nBtn {
+        overflow: hidden;
+    }
+    .nBtn a {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #a47c29;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    input, textarea, select, button {
+        text-rendering: auto;
+        color: initial;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        margin: 0em 0em 0em 0em;
+        font: 13.3333px Arial;
+    }
+
+    input, textarea, select, button, meter, progress {
+        -webkit-writing-mode: horizontal-tb;
+    }
+    .row {
+        width: 80%;
+        transition: .2s width ease;
+    }
+    .row:before, .row:after {
+        display: table;
+        clear: both;
+        content: '';
+    }
+    .mainRight ul li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+    .coal_list li ._img {
+        height: 0;
+        padding-bottom: 75%;
+        overflow: hidden;
+        border-color: gray;
+        border-right: 1px dashed #000;
+        border-left: 1px dashed #000;
+        border-top: 1px dashed #000;
+    }
+    .coal_list ._title {
+        background: #e7e7e7;
+        padding: 0 15px;
+        line-height: 52px;
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    .coal_list ._img img {
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: top;
+        -ms-interpolation-mode: bicubic;
+        border: 0px;
+    }
+    .mainRight ul{
+        padding-left: 0;
+        list-style-type: none;
+    }
+    .mainRight a {
+        color: inherit;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        outline: 0;
+    }
+    .coal_detail {
+        margin-bottom: 40px;
+    }
+    .fix {
+    }
+    .fix:before, .fix:after {
+        display: table;
+        clear: both;
+        content: '';
+    }
+    .coal_detail ._img {
+        margin-right: 4%;
+        width: 54%;
+        padding-bottom: 40%;
+        height: 0;
+        overflow: hidden;
+    }
+    .l {
+        float: left;
+    }
+    .coal_detail ._tit {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+</style>
+<section class="bodyMain">
+    <section class="n_banner pr home_banner">
+        <div class="pr oh bann_img">
+            <img src="${CTPATH}/images/740bb91f9f33832fbd1e0566f96992b6.jpg" alt="产品展示"  />
+        </div>
+        <h3 class="posi pa"> <a href="/">首页</a><span>&nbsp;&gt;&nbsp;</span> <a href="/about/index.htm">关于双欣</a><span>&nbsp;&gt;&nbsp;</span> 双欣简介 </h3>
+    </section>
+    <section class="pageMain news_home">
+        <div class="part1">
+            <div class="wrap">
+                <div class="mainLeft l">
+                    <div class="channelT">
+                        <h2>产品展示</h2>
+                    </div>
+                    <ul class="subnavs">
+                        <@jp.taxonomys module="product">
+                        <#list taxonomys as taxonomy>
+                            <#if "/sx-group/news-news-1.html" != taxonomy.url!>
+                                <li <#if REQUEST.requestURI ? contains(taxonomy.url)> class="cur" </#if>> <a href="${taxonomy.url!}">${taxonomy.title!}<i class="ion"></i></a></li>
+                            </#if>
+                        </#list>
+                    </@jp.taxonomys>
+                    </ul>
+
+
+                    <div class="media">
+                        <h3 class="_t">媒体联络</h3>
+                        <p>内蒙古双欣集团有限公司</p>
+                        <ul>
+                            <li><i class="ion">&#xe73d;</i>传真：0477-8565688</li>
+                            <li><i class="ion">&#xe626;</i>电话：0477-8565660</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="mainRight r">
+                    <div class="coal_detail fix">
+                        <div class="_img l"><img src="${CTPATH}/images/power.jpg" alt="双欣电力"></div>
+                        <div class="_intro">
+                            <h3 class="_tit">双欣电力</h3>
+                            <h4>
+                                国内标准储量
+                            </h4>
+                            <p>2013年国内剩余保有储量：1,389</p><p>2013年国内可采储量：632<br/><br/></p><p><span style="font-size: 16px;"><strong>产量</strong></span></p><p>2010年：138</p><p>2011年：97</p><p>2012年：111</p><p>2013年：30</p>
+                            <div class="bdsharebuttonbox" data-tag="share_1">
+                                <a class="bds_qzone" data-cmd="qzone" href="#"></a>
+                                <a class="bds_tsina" data-cmd="tsina"></a>
+                                <a class="bds_baidu" data-cmd="baidu"></a>
+                                <a class="bds_renren" data-cmd="renren"></a>
+                                <a class="bds_tqq" data-cmd="tqq"></a>
+                                <a class="bds_more" data-cmd="more"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coal_detail_con">
+                        <h3 class="_tit">
+                            公司描述
+                        </h3>
+                        <div class="_con">
+                            <p>　　阳湾沟煤矿位于准格尔煤田，行政归属鄂尔多斯市准旗窑沟乡，资源整合技改后于2009年9月24日正式投产，煤矿面积为1.0337平方公里。截止2012年12月31日，根据国土资源部储量评审备案证明及公司生产所动用资源情况，该矿煤炭资源保有储量为1,232万吨。拥有2个厚度介乎2.9米至10.8米的主煤层。经核准年产能为140万吨，所生产的优质动力煤发热量为3700大卡/千克-4100大卡/千克。矿井采用斜—立井混合式开拓方式，走向长壁综合机械化放顶煤回采工艺。</p>
+                        </div>
+                    </div>
+
+                    <div class="coalTab">
+                        <div class="tab_c">
+                            <ul class="row coal_list">
+
+                                <li class="span-4 smal-12"><a href="yunying-detail-4232.htm">
+                                    <div class="_img"><img src="${CTPATH}/images/s_m.jpg" alt="煤泥"/>
+
+                                    </div>
+                                    <div class="_title">煤泥<i class="ion r">&#xe60b;</i></div>
+                                </a>
+                                </li>
+
+                                <li class="span-4 smal-12"><a href="yunying-detail-4231.htm">
+                                    <div class="_img"><img src="${CTPATH}/images/s_jm.jpg" alt="精煤"/>
+
+                                    </div>
+                                    <div class="_title">精煤<i class="ion r">&#xe60b;</i></div>
+                                </a>
+                                </li>
+
+                                <li class="span-4 smal-12"><a href="yunying-detail-4230.htm">
+                                    <div class="_img"><img src="${CTPATH}/images/s_zm.jpg" alt="中煤"/>
+
+                                    </div>
+                                    <div class="_title">中煤<i class="ion r">&#xe60b;</i></div>
+                                </a>
+                                </li>
+
+                                <li class="span-4 smal-12"><a href="yunying-detail-4229.htm">
+                                    <div class="_img"><img src="${CTPATH}/images/s_ym.jpg" alt="原煤"/>
+
+                                    </div>
+                                    <div class="_title">原煤<i class="ion r">&#xe60b;</i></div>
+                                </a>
+                                </li>
+
+                                <li class="span-4 smal-12"><a href="yunying-detail-4228.htm">
+                                    <div class="_img"><img src="${CTPATH}/images/s_jy.jpg" alt="聚乙烯醇"/>
+
+                                    </div>
+                                    <div class="_title">聚乙烯醇<i class="ion r">&#xe60b;</i></div>
+                                </a>
+                                </li>
+
+                                <li class="span-4 smal-12"><a href="yunying-detail-4227.htm">
+                                    <div class="_img"><img src="${CTPATH}/images/s_gq.jpg" alt="高强高模聚乙烯醇纤维"/>
+
+                                    </div>
+                                    <div class="_title">高强高模聚乙烯醇纤维<i class="ion r">&#xe60b;</i></div>
+                                </a>
+                                </li>
+
+                                <li class="span-4 smal-12"><a href="yunying-detail-4132.htm">
+                                    <div class="_img"><img src="${CTPATH}/images/s_dk.jpg" alt="大颗粒活性炭"/>
+
+                                    </div>
+                                    <div class="_title">大颗粒活性炭<i class="ion r">&#xe60b;</i></div>
+                                </a>
+                                </li>
+                                <li class="span-4 smal-12"><a href="yunying-detail-4132.htm">
+                                    <div class="_img"><img src="${CTPATH}/images/s_dk.jpg" alt="小颗粒活性炭"/>
+
+                                    </div>
+                                    <div class="_title">小颗粒活性炭<i class="ion r">&#xe60b;</i></div>
+                                </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</section>
+</@layout>

@@ -1,91 +1,243 @@
-<section class="bodyMain">
+<#include "_layout.html"/>
+<@layout>
+<style type="text/css">
+    .channelT {
+        background: url(${CTPATH}/images/channelT_bg.jpg) no-repeat center;
+        height: 100px;
+        color: #fff;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .channelT h2 {
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 80px;
+    }
+    .mainLeft {
+        width: 15%;
+        padding-top: 3%;
+    }
+    .subnavs {
+        padding: 15px 0;
+        background: #fff;
+        margin-bottom: 20px;
+    }
+    .subnavs>li.cur {
+        background: #976132;
+        color: #fff;
+    }
+    .subnavs>li>a {
+        display: block;
+        padding: 0 12px;
+        font-size: 14px;
+        line-height: 42px;
+        border-bottom: #dadadb solid 1px;
+    }
+    a {
+        color: inherit;
+        cursor: pointer;
+    }
+    .mainRight {
+        margin-top: 3%;
+        margin-left: 3%;
+        padding:2% ;
+        width: 76%;
+        background: #fff;
+        min-height: 500px;
+        float: left;
+    }
+    .newsSear, .media {
+        background: #fff;
+        padding: 20px;
+    }
+    .media ._t {
+        text-indent: 15px;
+        font-size: 18px;
+        border-bottom: #dadadb solid 1px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    .media p {
+        font-size: 14px;
+        text-indent: 15px;
+    }
+    /*ul, menu, dir {*/
+    /*display: block;*/
+    /*list-style-type: disc;*/
+    /*-webkit-margin-before: 1em;*/
+    /*-webkit-margin-after: 1em;*/
+    /*-webkit-margin-start: 0px;*/
+    /*-webkit-margin-end: 0px;*/
+    /*-webkit-padding-start: 40px;*/
+    /*}*/
+    /*ul {*/
+    /*padding-left: 0;*/
+    /*list-style-type: none;*/
+    /*}*/
+    .inewsSearch {
+        padding: 20px 7% 28px;
+        background-color: #fff;
+    }
+    .inewsSearch .sec_hd {
+        margin-bottom: 8px;
+    }
+    .inewsSearch .sec_bd .nselect {
+        margin-bottom: 15px;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
 
+    .nselect .c_select {
+        display: block;
+        width: 100%;
+        background-color: #e5e5e5;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 0!important;
+    }
+    input[type="hidden" i], input[type="image" i], input[type="file" i] {
+        -webkit-appearance: initial;
+        background-color: initial;
+        padding: initial;
+        border: initial;
+    }
+    .nInput {
+        display: block;
+        height: 39px;
+        border: #ddd 1px solid;
+        padding: 0 20px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        background-color: #fff;
+    }
+    .nInput input {
+        width: 100%;
+        height: 19px;
+        line-height: 19px;
+        padding: 10px 0;
+        vertical-align: top;
+        border-width: 0;
+        font-family: "Microsoft Yahei";
+    }
+    input {
+        -webkit-appearance: textfield;
+        background-color: white;
+        -webkit-rtl-ordering: logical;
+        user-select: text;
+        cursor: auto;
+        padding: 1px;
+        border-width: 2px;
+        border-style: inset;
+        border-color: initial;
+        border-image: initial;
+    }
+    .subnavs>li.cur a {
+        border-bottom: none;
+        color: #fff;
+    }
+    .subnavs>li>a {
+        display: block;
+        padding: 0 12px;
+        font-size: 14px;
+        line-height: 42px;
+        border-bottom: #dadadb solid 1px;
+    }
+    .subnavs>li>a i {
+        float: right;
+        padding: 0;
+        margin: 0;
+    }
+    .nBtn {
+        overflow: hidden;
+    }
+    .nBtn a {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #a47c29;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    input, textarea, select, button {
+        text-rendering: auto;
+        color: initial;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        margin: 0em 0em 0em 0em;
+        font: 13.3333px Arial;
+    }
+    input, textarea, select, button, meter, progress {
+        -webkit-writing-mode: horizontal-tb;
+    }
+</style>
+<section class="bodyMain">
+    <!--header end-->
     <section class="n_banner pr home_banner">
         <div class="pr oh bann_img">
-            <img src="/upload/images/2016/11/26/2dccd22773af40e6b1a180b195ce2095.jpg" alt="新闻中心" />
+            <img src="${CTPATH}/images/16pic_1711917_b.jpg" alt="新闻中心" />
         </div>
-        <h3 class="posi pa"></h3>
+        <h3 class="posi pa"> <a href="/">首页</a><span>&nbsp;&gt;&nbsp;</span> <a href="/about/index.htm">关于双欣</a><span>&nbsp;&gt;&nbsp;</span> 双欣简介 </h3>
     </section>
-    <!--main-->
     <section class="pageMain news_home">
-        <!--part1-->
         <div class="part1">
             <div class="wrap">
-                <div class="part1_hd part_hd wow fadeInDown">
-                    <h2 class="_title channl_title"><a href="/news/re-dian-zi-xun.jsp">热点资讯</a></h2>
-                    <div class="_text fix">
-                        <div class="_text_l l">
-                            聚集公司实时动态，发布亨通集团最新新闻，欢迎您的关注！
-                        </div>
-                        <a title="热点资讯" href="/news/re-dian-zi-xun.jsp" target="" class="_more r">查看更多 &gt;</a>
+                <div class="mainLeft l">
+                    <div class="channelT">
+                        <h2>新闻资讯</h2>
                     </div>
-                </div>
-                <div class="part1_bd fix" id="redian">
-                </div>
-            </div>
-        </div>
-        <!--part1 end-->
+                    <ul class="subnavs">
+                        <@jp.taxonomys module="news">
+                        <#list taxonomys as taxonomy>
+                            <#if "/sx-group/news-news-1.html" != taxonomy.url!>
+                                <li <#if REQUEST.requestURI ? contains(taxonomy.url)> class="cur" </#if>><a href="${taxonomy.url!}">${taxonomy.title!}<i class="ion"></i></a></li>
+                            </#if>
+                        </#list>
+                    </@jp.taxonomys>
+                    </ul>
 
-        <!--part3-->
-        <div class="part3">
-            <div class="wrap fix">
-                <div class="part3_l l wow fadeInLeft">
-                    <div class="part3_hd part_hd">
-                        <div class="_text fix">
-                            <h2 class="_title channl_title l"><a href="/news/mei-ti-shi-jiao.jsp">媒体聚集</a></h2>
-                            <div class="_text_l l"></div>
-                            <a title="媒体聚集" href="/news/mei-ti-shi-jiao.jsp" target="" class="_more r">查看更多 &gt;</a>
-                        </div>
-                    </div>
-                    <div class="part3_l_bd">
-                        <ul id="meitiList">
+
+                    <div class="media">
+                        <h3 class="_t">媒体联络</h3>
+                        <p>内蒙古双欣集团有限公司</p>
+                        <ul>
+                            <li><i class="ion">&#xe73d;</i>传真：0477-8565688</li>
+                            <li><i class="ion">&#xe626;</i>电话：0477-8565660</li>
                         </ul>
                     </div>
+
                 </div>
-                <div class="part3_r r wow fadeInRight">
-                    <!--此处不循环-->
-                    <ul class="full-row">
-                        <li class="span-6 smal-12 li1"> <a href="/news/chu-ban-wu-list-0.htm" target="" title="出版物" class="_text_box "> <h3 class="_title trans">出版物</h3>
-                            <div class="_text trans">
-                                了解更多
-                            </div> </a> </li>
-                        <li class="span-6 smal-12 li2"> <a href="/news/chu-ban-wu-detail-12549.htm" target="">
-                            <div class="_img_box">
-                                <div class="_img rect-75 imgZoom">
-                                    <img src="/upload/images/2016/11/24/194c7abed95d48b79bf86e8f9fd7b827.jpg" alt="1" />
+                <div class="mainRight r">
+                    <div class="x-pc-width clearfix x-margin-top-20 x-margin-bottom-20">
+                        <!-- -->
+                        <div class="x-pull-left x-layout-73 blog-sm-left">
+                            <div class="x-white-box">
+                                <h3 class="x-box-title">${content.title!}
+                                </h3>
+
+                                <div class="x-details-content x-padding-top-10 x-padding-bottom-10 aritcle">
+                                    ${content.text!}
+
                                 </div>
-                            </div></a> </li>
-                        <li class="span-6 smal-12 li3"> <a href="/news/zhuan-ti-bao-dao-detail-197.htm" target="">
-                            <div class="_img_box">
-                                <div class="_img rect-75 imgZoom">
-                                    <img src="/upload/images/2016/11/30/7ee6154243504bdea9f40cc4483a0ef8.jpg" alt="2" />
-                                </div>
-                            </div></a> </li>
-                        <li class="span-6 smal-12 li4"> <a href="/news/zhuan-ti-bao-dao-detail-197.htm" target="" title="专题报道" class="_text_box text_box_02"> <h3 class="_title trans">专题报道</h3>
-                            <div class="_text trans">
-                                了解更多
-                            </div> </a> </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--part3 end-->
-        <!--part4-->
-        <div class="part4">
-            <div class="wrap">
-                <div class="part4_hd part_hd wow fadeInDown">
-                    <div class="_text fix">
-                        <h2 class="_title channl_title l"><a href="/news/xing-ye-zi-xun.jsp">行业资讯</a></h2>
-                        <a title="行业资讯" href="/news/xing-ye-zi-xun.jsp" target="" class="_more r">查看更多 &gt;</a>
+                            </div>
                     </div>
                 </div>
-                <div class="part4_bd wow fadeInUp">
-                    <ul class="full-row" id="zxList">
-                    </ul>
-                </div>
             </div>
         </div>
-        <!--part4 end-->
+
+
     </section>
-    <!--main end-->
+
+
 </section>
+
+</@layout>

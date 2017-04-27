@@ -35,7 +35,7 @@ import io.jpress.template.TemplateManager;
 import io.jpress.utils.JsoupUtils;
 import io.jpress.utils.StringUtils;
 
-import static com.sun.xml.internal.ws.dump.LoggingDumpTube.Position.Before;
+//import static com.sun.xml.internal.ws.dump.LoggingDumpTube.Position.Before;
 
 @RouterMapping(url = "/admin/comment", viewPath = "/WEB-INF/admin/comment")
 @Before(ActionCacheClearInterceptor.class)

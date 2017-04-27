@@ -180,7 +180,7 @@ define(function(require, exports, module) {
         });
 
     //多组分享js         
-     require.async('bdshare',function(bdshare){
+    /* require.async('bdshare',function(bdshare){
          bdshare([{
               tag : 'foot_share',  
               bdSize : 24,      //图标尺寸, 16｜24｜32
@@ -202,7 +202,7 @@ define(function(require, exports, module) {
               bdStyle : '0'     //图标类型, 0｜1｜2
 
            }])
-     });
+     });*/
 
 
      var vision=base.browser.ie;

@@ -1,0 +1,400 @@
+<#include "_layout.html"/>
+<@layout>
+<style type="text/css">
+    .channelT {
+        background: url(${CTPATH}/images/channelT_bg.jpg) no-repeat center;
+        height: 100px;
+        color: #fff;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .channelT h2 {
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 80px;
+    }
+    .mainLeft {
+        width: 15%;
+        padding-top: 3%;
+    }
+    .subnavs {
+        padding: 15px 0;
+        background: #fff;
+        margin-bottom: 20px;
+    }
+    .subnavs>li.cur {
+        background: #976132;
+        color: #fff;
+    }
+    .subnavs>li>a {
+        display: block;
+        padding: 0 12px;
+        font-size: 14px;
+        line-height: 42px;
+        border-bottom: #dadadb solid 1px;
+    }
+    a {
+        color: inherit;
+        cursor: pointer;
+    }
+    .mainRight {
+        margin-top: 3%;
+        margin-left: 3%;
+        padding:2% ;
+        width: 76%;
+        background: #fff;
+        min-height: 500px;
+        float: left;
+    }
+    .newsSear, .media {
+        background: #fff;
+        padding: 20px;
+    }
+    .media ._t {
+        text-indent: 15px;
+        font-size: 18px;
+        border-bottom: #dadadb solid 1px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    .media p {
+        font-size: 14px;
+        text-indent: 15px;
+    }
+    .inewsSearch {
+        padding: 20px 7% 28px;
+        background-color: #fff;
+    }
+    .inewsSearch .sec_hd {
+        margin-bottom: 8px;
+    }
+    .inewsSearch .sec_bd .nselect {
+        margin-bottom: 15px;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .nselect .c_select {
+        display: block;
+        width: 100%;
+        background-color: #e5e5e5;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 0!important;
+    }
+    input[type="hidden" i], input[type="image" i], input[type="file" i] {
+        -webkit-appearance: initial;
+        background-color: initial;
+        padding: initial;
+        border: initial;
+    }
+    .nInput {
+        display: block;
+        height: 39px;
+        border: #ddd 1px solid;
+        padding: 0 20px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        background-color: #fff;
+    }
+    .nInput input {
+        width: 100%;
+        height: 19px;
+        line-height: 19px;
+        padding: 10px 0;
+        vertical-align: top;
+        border-width: 0;
+        font-family: "Microsoft Yahei";
+    }
+    input {
+        -webkit-appearance: textfield;
+        background-color: white;
+        -webkit-rtl-ordering: logical;
+        user-select: text;
+        cursor: auto;
+        padding: 1px;
+        border-width: 2px;
+        border-style: inset;
+        border-color: initial;
+        border-image: initial;
+    }
+    .subnavs>li.cur a {
+        border-bottom: none;
+        color: #fff;
+    }
+    .subnavs>li>a {
+        display: block;
+        padding: 0 12px;
+        font-size: 14px;
+        line-height: 42px;
+        border-bottom: #dadadb solid 1px;
+    }
+    .subnavs>li>a i {
+        float: right;
+        padding: 0;
+        margin: 0;
+    }
+    .nBtn {
+        overflow: hidden;
+    }
+    .nBtn a {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #a47c29;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    input, textarea, select, button {
+        text-rendering: auto;
+        color: initial;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        margin: 0em 0em 0em 0em;
+        font: 13.3333px Arial;
+    }
+    input, textarea, select, button, meter, progress {
+        -webkit-writing-mode: horizontal-tb;
+    }
+    .mainRight  .main_bar {
+        padding: 0 0 50px;
+        background-color: #fff;
+    }
+    .mainRight.main_bar .Form-J1 {
+        padding-bottom: 0px;
+    }
+    .Form-J1 .Form-J1-Left {
+        float: left;
+        width: 50%;
+    }
+    .mainRight .Form-J1 .Form-J1-li {
+        padding-top: 10px;
+    }
+    .mainRight .Form-J1 .Form-J1-li {
+        padding-top: 10px;
+    }
+    .mainRight .Form-J1 .Form-J1-li input {
+        height: 28px;
+        line-height: 28px;
+        border: 1px #ddd solid;
+        width: 70%;
+    }
+    .mainRight .Form-J1 .Form-J1-li em {
+        color: red;
+        vertical-align: middle;
+        padding-left: 10px;
+    }
+    .mainRight i, em {
+        font-style: normal;
+    }
+    .mainRight .Form-J1 .Form-J1-li label {
+        width: 5em;
+        display: inline-block;
+        color: #666;
+        vertical-align: middle;
+        font-size: 13px;
+    }
+    .mainRight .Validform_wrong {
+        color: red;
+        white-space: nowrap;
+    }
+    .mainRight .Form-J1 .Form-J1-li select {
+        border: 1px #ddd solid;
+        width: 70%;
+        padding: 7px 0;
+    }
+    .mainRight input, select, textarea {
+        outline: 0;
+        font-family: inherit;
+        font-size: 100%;
+    }
+
+
+    .mainRight .Form-J1 .Form-J1-right {
+        float: right;
+        width: 50%;
+    }
+    .mainRight .Form-J1 .Form-J1-Btn {
+        clear: both;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .Form-J1 .Form-J1-li img {
+        vertical-align: middle;
+        padding-left: 10px;
+        cursor: pointer;
+        height: 30px;
+    }
+    .main_bar .Form-J1 .Form-J1-Btn ._submit {
+        background: #0372c3;
+    }
+    .Form-J1 .Form-J1-Btn ._reset {
+        background-color: #576b7c;
+    }
+    .Form-J1 .Form-J1-Btn button {
+        width: 16%;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        display: inline-block;
+        font-size: 14px;
+        color: #ffffff;
+        margin: 0px 4px;
+    }
+
+</style>
+<script type="text/javascript">
+    $(function(){
+        var str1="";
+        $("#submitt").click(function(){
+            $(".Form-J1 input").each(function(index,item){
+                str1+= $(this).prev().html()+":"+$(this).val()+"--";
+                }
+            );
+            str1+="性别："+$('input:radio:checked').val()+"--";
+            str1+="工作经历："+$("#zd_work_experience").val()+"--";
+            $("text").val(str1);
+        });
+    });
+</script>
+    <section class="bodyMain">
+        <section class="n_banner pr home_banner">
+            <div class="pr oh bann_img">
+                <img src="${CTPATH}/images/83b1OOOPICa8.jpg" alt="人才发展" />
+            </div>
+            <h3 class="posi pa"> <a href="/">首页</a><span>&nbsp;&gt;&nbsp;</span> <a href="/about/index.htm">关于双欣</a><span>&nbsp;&gt;&nbsp;</span> 双欣简介 </h3>
+        </section>
+        <section class="pageMain news_home">
+            <div class="part1">
+                <div class="wrap">
+                    <div class="mainLeft l">
+                        <div class="channelT">
+                            <h2>人才发展</h2>
+                        </div>
+                        <ul class="subnavs">
+                            <@jp.contents module="join">
+                            <#list contents as content>
+                                <li><a href="${content.url}">${content.title}<i class="ion"></i></a></li>
+                            </#list>
+                        </@jp.contents>
+                        </ul>
+
+
+                        <div class="media">
+                            <h3 class="_t">媒体联络</h3>
+                            <p>内蒙古伊泰集团有限公司</p>
+                            <ul>
+                                <li><i class="ion">&#xe73d;</i>传真：0477-8565688</li>
+                                <li><i class="ion">&#xe626;</i>电话：0477-8565660</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <div class="mainRight r">
+                        <#if "/sx-group/join/22.html"==REQUEST.requestURI!>
+                            <div>
+                                <h3>
+                                    招聘信息
+                                </h3>
+                                <p style="padding-top: 20px;">${content.text!}</p>
+                            </div>
+                            <#if content.isCommentEnable() >
+
+                                    <div  class="main_bar" style="margin-top: 20px;">
+                                        <h3>
+                                            个人简历
+                                        </h3>
+                                        <form action="${CPATH}/comment/submit" method="post"  id="comment">
+                                            <input type="hidden" name="cid" value="${(content.id)!}" >
+                                            <input type="hidden" name="anchor" value="comment" >
+                                            <input type="hidden" id="parent_id" name="parent_id" >
+                                            <input type="hidden" name="text" >
+                                        <div  class="Form-J1">
+                                            <div class="Form-J1-Left">
+                                                <div class="Form-J1-li">
+                                                    <label>真实姓名：</label>
+                                                    <input type="text" name="obj.link_man" id="zd_name" maxlength="30" datatype="*" nullmsg="请输入姓名！" sucmsg="验证通过！" errormsg="请输入姓名！" value="" />
+                                                    <em>*</em>
+                                                </div>
+                                                <div class="Form-J1-li">
+                                                    <label>性&nbsp;&nbsp;&nbsp;&nbsp;别：</label>
+                                                    <select id="gender" name="obj.gender"> <option value="0">男</option> <option value="1">女</option></select>
+                                                    <em>*</em>
+                                                </div>
+                                                <div class="Form-J1-li">
+                                                    <label>应聘职位：</label>
+                                                    <input type="text" name="obj.name" id="zd_jobposition" maxlength="40" datatype="*" nullmsg="请输入应聘职位！" sucmsg="验证通过！" errormsg="请输入应聘职位！" value="" />
+                                                    <em>*</em>
+                                                </div>
+                                                <div class="Form-J1-li">
+                                                    <label>出生年月：</label>
+                                                    <input type="text" name="obj.birthday" id="zd_birthday" maxlength="30" value="" />
+                                                </div>
+                                                <div class="Form-J1-li">
+                                                    <label>联系方式：</label>
+                                                    <input type="text" name="obj.link_phone" id="zd_telephone" maxlength="15" datatype="m" nullmsg="请输入电话！" sucmsg="验证通过！" errormsg="请填写手机号码！" value="" />
+                                                    <em>*</em>
+                                                </div>
+                                            </div>
+                                            <div class="Form-J1-right">
+                                                <div class="Form-J1-li">
+                                                    <label>联系邮箱：</label>
+                                                    <input type="text" name="obj.email" id="zd_email" maxlength="30" value="" datatype="e" nullmsg="请输入邮箱！" sucmsg="验证通过！" errormsg="请填写正确的邮箱地址！" />
+                                                    <em>*</em>
+                                                </div>
+                                                <div class="Form-J1-li">
+                                                    <label>工作经历：</label>
+                                                    <textarea name="obj.gzjl" id="zd_work_experience" rows="8"></textarea>
+                                                </div>
+                                                <#if OPTION('comment_need_captcha') ?? && OPTION('comment_need_captcha')=='true'>
+                                                    <div class="Form-J1-li ">
+                                                        <label>验证码：</label>
+                                                        <input type="text" name="comment_captcha">
+                                                        <img cdn-exclude src="${CPATH}/captcha" onclick="this.src='${CPATH}/captcha?d='+Math.random();" >
+                                                    </div>
+                                                </#if>
+                                                <div class="Form-J1-Btn">
+                                                    <button type="submit" class="_submit" id="submitt">提交</button>
+                                                    <button type="reset" class="_reset">重置</button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        </form>
+
+
+                                    </div>
+
+                            </#if>
+                            <#else>
+                                <div class="x-pull-left x-layout-73 blog-sm-left">
+                                    <div class="x-white-box">
+                                        <h3>人才理念：平等竞争，优胜劣汰，扬长避短，人尽其才</h3>
+                                        <div class="x-details-content x-padding-top-10 x-padding-bottom-10 aritcle">
+                                            ${content.text!}
+                                        </div>
+                                    </div>
+
+                                </div>
+                        </#if>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+</@layout>

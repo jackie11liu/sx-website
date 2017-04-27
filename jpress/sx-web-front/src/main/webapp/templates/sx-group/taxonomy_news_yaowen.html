@@ -61,19 +61,7 @@
 		font-size: 14px;
 		text-indent: 15px;
 	}
-	/*ul, menu, dir {*/
-		/*display: block;*/
-		/*list-style-type: disc;*/
-		/*-webkit-margin-before: 1em;*/
-		/*-webkit-margin-after: 1em;*/
-		/*-webkit-margin-start: 0px;*/
-		/*-webkit-margin-end: 0px;*/
-		/*-webkit-padding-start: 40px;*/
-	/*}*/
-	/*ul {*/
-		/*padding-left: 0;*/
-		/*list-style-type: none;*/
-	/*}*/
+
 	.inewsSearch {
 		padding: 20px 7% 28px;
 		background-color: #fff;
@@ -189,7 +177,7 @@
 		<div class="pr oh bann_img">
 			<img src="${CTPATH}/images/16pic_1711917_b.jpg" alt="新闻中心" />
 		</div>
-		<h3 class="posi pa"></h3>
+		<h3 class="posi pa"> <a href="/">首页</a><span>&nbsp;&gt;&nbsp;</span> <a href="/about/index.htm">关于双欣</a><span>&nbsp;&gt;&nbsp;</span> 双欣简介 </h3>
 	</section>
 	<!--main-->
 	<section class="pageMain news_home">
@@ -211,14 +199,13 @@
 						<div class="_topnewslist" style="width:50%;">
 							<ul class="row" style="width: 160%;">
 
-								<@jp.contents module="article">
-								<#list contents as content>
-									<li><a href="${(content.url)!}"><time class="date_time">${content.created?string('yyyy/MM/dd')!}</time><div class="_t">
+								<@jp.contentPage>
+								<#list page.getList() as content>
+									<li style="width:100%;"><a href="${(content.url)!}"><time class="date_time">${content.created?string('yyyy/MM/dd')!}</time><div class="_t">
 										${(content.title)!}
 									</div></a></li>
-
 								</#list>
-							</@jp.contents>
+							</@jp.contentPage >
 							</ul>
 						</div>
 					</div>
